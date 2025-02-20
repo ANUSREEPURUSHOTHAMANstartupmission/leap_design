@@ -1,0 +1,52 @@
+---
+const { title } = Astro.props;
+
+import Navbar from "../components/Navbar.svelte";
+
+const description = "Kerala Startup Mission is the central agency of the Government of Kerala for entrepreneurship development and incubation activities in Kerala, India.";
+const url = "https://startupmission.kerala.gov.in/";
+
+---
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vitour - Travel & Tour Booking HTML Template</title>
+
+    <meta name="author" content="themesflat.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="app/css/app.css">
+    <link rel="stylesheet" href="app/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="app/css/textanimation.css">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="/favicon.png">
+
+</head>
+
+<body class="body header-fixed counter-scroll">
+
+		<!-- <Navbar client:load></Navbar> -->
+		<slot />
+
+		<script src="app/js/jquery.min.js" is:inline></script>
+		<script src="app/js/jquery.easing.js" is:inline></script>
+		<script src="app/js/jquery.nice-select.min.js" is:inline></script>
+		<script src="app/js/bootstrap.min.js" is:inline></script>
+		<script src="app/js/countto.js" is:inline></script>
+		<script src="app/js/swiper-bundle.min.js" is:inline></script>
+		<script src="app/js/swiper.js" is:inline></script>
+		<script src="app/js/price-ranger.js" is:inline></script>
+		<script src="app/js/textanimation.js" is:inline></script>
+		<script src="app/js/plugin.js" is:inline></script>
+		<script src="app/js/jquery.fancybox.js" is:inline></script>
+		<script src="app/js/shortcodes.js" is:inline></script>
+		<script src="app/js/main.js" is:inline></script>
+	
+	</body>
+	
+	</html>
