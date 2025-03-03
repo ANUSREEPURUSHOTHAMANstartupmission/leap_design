@@ -1,0 +1,633 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+import data from "../components/dataksum.json";
+import datapartners from "../components/datapartners.json";
+
+import Selection from '../components/Selection.astro'
+
+import Footer from '../components/Footer.astro'
+
+
+---
+
+<Layout title="LEAP | KERALA STARTUP MISSION">
+
+<Navbar></Navbar>
+<Navbarbottom client:load></Navbarbottom>
+
+<main id="main pt-24">
+
+    <section class="breadcumb-section mt-10">
+        <div class="tf-container">
+            <div class="row">
+                <div class="col-lg-12 center z-index1">
+                    <h1 class="title md:text-7xl text-4xl font-extrabold">LEAP CO-WORKS</h1>
+                    <img class="bcrumb-ab" src="./assets/images/page/mask-bcrumb.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="widget-adventure py-24">
+        <div class="center mb-20">
+           
+            <h2 class="title-heading font-extrabold text-4xl uppercase">KSUM Leap </h2>
+        </div>
+        <div class="tf-container">
+            <div class="row">
+                <div class="mb-18">
+                    <span class="sub-title-heading text-main fs-28-46 font-yes animated">What</span>
+                    <h2 class="title-heading mb-18 animated text-3xl font-bold uppercase">we offer
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="">
+                       
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-hiking" role="tabpanel"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 col-lg-3 group">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0 overflow-hidden rounded-md">
+                                                <img src="/leap/22.avif"  alt="" class="group-hover:scale-125 duration-300 hover:rounded-md">
+                                            </a>
+                                            <div class="adventure-image">
+                                                <h6 class="title-ad">
+                                                    <a >Incubation Support</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0">
+                                                <img src="/leap/11.jpg" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Co Working Space</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0">
+                                                <img src="/leap/33.jpg" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Flexi Workstation</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3 flex">
+                                        <div class="tf-adventure flex-three mb-43 float-start">
+                                            <a  class="adventure-image flex-shrink-0">
+                                                <img src="/leap/33.avif" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Meeting Rooms & 
+                                                        Discussion Rooms</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0">
+                                                <img src="/leap/44.jpg" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Plug and play
+                                                        Workstations</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0">
+                                                <img src="/leap/55.avif" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >High speed 
+                                                        Internet</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3 group">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0 overflow-hidden rounded-md">
+                                                <img src="/leap/77.jpg" alt="" class="group-hover:scale-125 duration-300 hover:rounded-md">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Funding Support</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0">
+                                                <img src="/leap/66.avif" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Mentorship Support</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Widget Blog -->
+     <!-- <section class="section-blog pd-main relative">
+        <div class="tf-container">
+            <div class="row">
+                <div class="col-lg-12 mb-40">
+                    <div class="center m0-auto w-text-heading">
+                        <span
+                            class="sub-title-heading text-main font-yes fs-28-46 ">Explore
+                            the world</span>
+                        <h2 class="title-heading ">Latest news & articles from the
+                            blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="flex max-h-[80vh] overflow-clip  gap-10">
+                <div class="col-lg-6 h-full ">
+                    <div class="tf-widget-blog blog-style2 ">
+                        <a href="blog-details.html" class="blog-image">
+                            <img src="./assets/images/blog/bl-h4.jpg" alt="">
+                            <div class="category-blog">
+                                <i class="icon-Group-8"></i>
+                                <span>Business</span>
+                            </div>
+                        </a>
+                        <div class="blog-content">
+                            <ul class="meta-list flex-three">
+                                <li>
+                                    <i class="icon-profile-user-1"></i>
+                                    <span>Mehedii .H</span>
+                                </li>
+                                <li>
+                                    <i class="icon-7"></i>
+                                    <span>Coments (03)</span>
+                                </li>
+                            </ul>
+                            <h3 class="entry-title"><a href="#">How to Prepare for your First Track his
+                                    consumer-focused </a></h3>
+                            <a href="blog-details.html" class="btn-read-more">Read More <i
+                                    class="icon-Vector-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 scroll  overflow-scroll ">
+                    <div class="tf-widget-blog flex-three blog-style3">
+                        <a href="blog-details.html" class="blog-image">
+                            <img src="./assets/images/blog/bl-h4-1.jpg" alt="">
+                        </a>
+                        <div class="blog-content">
+                            <ul class="meta-list flex-three">
+                                <li>
+                                    <i class="icon-profile-user-1"></i>
+                                    <span>Mehedii .H</span>
+                                </li>
+                                <li>
+                                    <i class="icon-7"></i>
+                                    <span>Coments (03)</span>
+                                </li>
+                            </ul>
+                            <h3 class="entry-title"><a href="blog-details.html">Get Best Advertiser In Your
+                                    Side Pocket</a>
+                            </h3>
+                            <a href="blog-details.html" class="btn-read-more">Read More <i
+                                    class="icon-Vector-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="tf-widget-blog flex-three blog-style3">
+                        <a href="blog-details.html" class="blog-image">
+                            <img src="./assets/images/blog/bl-h4-2.jpg" alt="">
+                        </a>
+                        <div class="blog-content">
+                            <ul class="meta-list flex-three">
+                                <li>
+                                    <i class="icon-profile-user-1"></i>
+                                    <span>Mehedii .H</span>
+                                </li>
+                                <li>
+                                    <i class="icon-7"></i>
+                                    <span>Coments (03)</span>
+                                </li>
+                            </ul>
+                            <h3 class="entry-title"><a href="blog-details.html">Get Best Advertiser In Your
+                                    Side Pocket</a>
+                            </h3>
+                            <a href="blog-details.html" class="btn-read-more">Read More <i
+                                    class="icon-Vector-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="tf-widget-blog flex-three blog-style3">
+                        <a href="blog-details.html" class="blog-image">
+                            <img src="./assets/images/blog/bl-h4-3.jpg" alt="">
+                        </a>
+                        <div class="blog-content">
+                            <ul class="meta-list flex-three">
+                                <li>
+                                    <i class="icon-profile-user-1"></i>
+                                    <span>Mehedii .H</span>
+                                </li>
+                                <li>
+                                    <i class="icon-7"></i>
+                                    <span>Coments (03)</span>
+                                </li>
+                            </ul>
+                            <h3 class="entry-title"><a href="blog-details.html">Get Best Advertiser In Your
+                                    Side Pocket</a>
+                            </h3>
+                            <a href="blog-details.html" class="btn-read-more">Read More <i
+                                    class="icon-Vector-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="tf-widget-blog flex-three blog-style3">
+                        <a href="blog-details.html" class="blog-image">
+                            <img src="./assets/images/blog/bl-h4-3.jpg" alt="">
+                        </a>
+                        <div class="blog-content">
+                            <ul class="meta-list flex-three">
+                                <li>
+                                    <i class="icon-profile-user-1"></i>
+                                    <span>Mehedii .H</span>
+                                </li>
+                                <li>
+                                    <i class="icon-7"></i>
+                                    <span>Coments (03)</span>
+                                </li>
+                            </ul>
+                            <h3 class="entry-title"><a href="blog-details.html">Get Best Advertiser In Your
+                                    Side Pocket</a>
+                            </h3>
+                            <a href="blog-details.html" class="btn-read-more">Read More <i
+                                    class="icon-Vector-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="tf-widget-blog flex-three blog-style3">
+                        <a href="blog-details.html" class="blog-image">
+                            <img src="./assets/images/blog/bl-h4-3.jpg" alt="">
+                        </a>
+                        <div class="blog-content">
+                            <ul class="meta-list flex-three">
+                                <li>
+                                    <i class="icon-profile-user-1"></i>
+                                    <span>Mehedii .H</span>
+                                </li>
+                                <li>
+                                    <i class="icon-7"></i>
+                                    <span>Coments (03)</span>
+                                </li>
+                            </ul>
+                            <h3 class="entry-title"><a href="blog-details.html">Get Best Advertiser In Your
+                                    Side Pocket</a>
+                            </h3>
+                            <a href="blog-details.html" class="btn-read-more">Read More <i
+                                    class="icon-Vector-4"></i></a>
+                        </div>
+                    </div>
+                    <div class="tf-widget-blog flex-three blog-style3">
+                        <a href="blog-details.html" class="blog-image">
+                            <img src="./assets/images/blog/bl-h4-3.jpg" alt="">
+                        </a>
+                        <div class="blog-content">
+                            <ul class="meta-list flex-three">
+                                <li>
+                                    <i class="icon-profile-user-1"></i>
+                                    <span>Mehedii .H</span>
+                                </li>
+                                <li>
+                                    <i class="icon-7"></i>
+                                    <span>Coments (03)</span>
+                                </li>
+                            </ul>
+                            <h3 class="entry-title"><a href="blog-details.html">Get Best Advertiser In Your
+                                    Side Pocket</a>
+                            </h3>
+                            <a href="blog-details.html" class="btn-read-more">Read More <i
+                                    class="icon-Vector-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+  
+
+
+     <!-- Widget Blog -->
+     <section class="section-blog pb-24 relative" id="ksum_leap">
+        <div class="bg-blog-h4"></div>
+        <div class="tf-container">
+            <div class="row">
+                <div class="col-lg-12 mb-10">
+                    <div class="center m0-auto w-text-heading">
+                        <span
+                            class="sub-title-heading text-main font-yes fs-28-46 text-base  ">LEAP Centres</span>
+                        <h2 class="title-heading  font-bold text-2xl ">KSUM Owned centres</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+               
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 ">
+                    {data.map((item) => (
+                    <div class="tf-widget-blog flex-three blog-style3 ">
+                        <a href={`/details/${item.id}`} class="blog-image">
+                            <img src={item.image} alt={item.title} alt="">
+                        </a>
+                        <div class="blog-content">
+                           
+                            <h3 class="entry-title"><a href={`/details/${item.id}`}>{item.title}</a>
+                            </h3>
+                            <p class="text-sm">{item.address}</p>
+                            
+                           <div class=" flex justify-between items-center pt-2 ">
+                                <a  href={`/details/${item.id}`} class="btn-read-more items-center flex justify-center text-xs">Read More <i
+                                        class="icon-Vector-4"></i></a>
+                                <ul class="meta-list flex-three py-1">
+                                    <li class=" flex items-center justify-center">
+                                        <i class="icon-profile-user-1"></i>
+                                        <span class="text-sm">{item.poc}</span>
+                                    </li>
+                                
+                                </ul>
+                           </div>
+
+                        </div>
+                    </div>
+                    ))}
+
+                </div>
+               
+              
+            </div>
+
+        </div>
+    </section>
+    <!-- Widget Blog -->
+
+
+
+    <!-- Widget Blog -->
+
+    <section class="mb-14 tf-container">
+         <div class="row">
+            <div class="mb-18">
+                <span class="sub-title-heading text-main fs-28-46 font-yes animated">What</span>
+                <h2 class="title-heading mb-18 animated text-3xl font-bold uppercase">we offer
+            </div>
+        </div>
+        <Selection></Selection>
+
+    </section>
+    <section class="tf-container flex items-end justify-end w-full">
+       
+        <div class="flex-three btn-wrap-about ">
+            <a href="https://startups.startupmission.in/application/incubation" target="_blank" class="btn-main">
+                <p class="btn-main-text"> Apply Now</p>
+                <p class="iconer">
+                    <i class="icon-arrow-right"></i>
+                </p>
+            </a>
+        </div>
+    </section>
+
+    
+   
+    <section class="about-us-h4 pb-24 pt-32 " id="leap_facility">
+        <div class="tf-container">
+            <div class="row">
+                <div class="col-md-6 inner-content-about">
+                    <div class="row">
+                        <div class="">
+                            <h2 class="title-heading mb-18 animated text-3xl font-bold uppercase">KSUM PARTNERS
+                        </div>
+                        <div class="">
+                            <p class="des">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nisi repudiandae natus quidem eius et aspernatur harum voluptate quam in! Modi velit, odio nisi nulla nostrum eligendi qui sit dolorum.
+                            </p>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="row mt-10">
+                <div class=" grid md:grid-cols-2 grid-cols-1 gap-3">
+                    <div class="cheackmark items-center justify-center flex ">
+                        <div class="icon flex-five">
+                            <i class="icon-plane-1"></i>
+                        </div>
+                        <div class="content">
+                            <p class=" text-justify">
+                                The selection of startups and pricing for rent and fees will be at the sole discretion of each center.                                    </p>
+                        </div>
+                    </div>
+                    <div class="cheackmark flex items-center justify-center ">
+                        <div class="icon flex-five">
+                            <i class="icon-guide-1-1"></i>
+                        </div>
+                        <div class="content ">
+                            <p class="">
+                                Startups will be eligible for all benefits provided by KSUM
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-blog pb-24 relative" id="ksum_leap">
+        <div class="bg-blog-h4"></div>
+        <div class="tf-container">
+            <div class="row">
+                <div class="col-lg-12 mb-10">
+                    <div class="center m0-auto w-text-heading">
+                        <span
+                            class="sub-title-heading text-main font-yes fs-28-46 text-base  ">LEAP Centres</span>
+                        <h2 class="title-heading  font-bold text-2xl ">KSUM Partnered Center</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+               
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 ">
+                    {datapartners.map((item) => (
+                    <div class="tf-widget-blog flex-three blog-style3 ">
+                        <a href={`/partners/${item.id}`} class="blog-image">
+                            <img src={item.image} alt={item.title} alt="">
+                        </a>
+                        <div class="blog-content w-full">
+                           
+                            <h3 class="entry-title"><a href={`/partners/${item.id}`}>{item.title}</a>
+                            </h3>
+                            <p class="text-sm">{item.address}</p>
+                            
+                           <div class=" flex justify-between items-center pt-2 ">
+                                <a  href={`/partners/${item.id}`} class="btn-read-more items-center flex justify-center text-xs">Read More <i
+                                        class="icon-Vector-4"></i></a>
+                                <ul class="meta-list flex-three py-1">
+                                    <li class=" flex items-center justify-center">
+                                        <i class="icon-profile-user-1"></i>
+                                        <span class="text-sm">{item.poc}</span>
+                                    </li>
+                                
+                                </ul>
+                           </div>
+
+                        </div>
+                    </div>
+                    ))}
+
+                </div>
+               
+              
+            </div>
+
+        </div>
+    </section>
+
+
+    
+    <section class="inner-faq pb-24 pt-24">
+                    <div class="tf-container">
+                        <div class="">
+                            <!-- <span class="sub-title-heading text-main fs-28-46 font-yes animated">What</span> -->
+                            <h2 class="title-heading mb-18 animated text-3xl font-bold uppercase">FAQs</h2>
+                        </div>
+                        <div class="row">
+
+                            <div class="  grid md:grid-cols-2 grid-cols-1 gap-4">
+                            
+                                <div id="accordion-collapse" data-accordion="collapse" class="">
+                                    <div>
+                                        <h2 id="accordion-collapse-heading-1" class="bg-white ">
+                                            <button type="button" class="flex items-center justify-between w-full  rtl:text-right text-black bg-white  px-4 font-semibold   gap-3 shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)]" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                                                <span>What is Flowbite?</span>
+                                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                                </svg>
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1 bg-white  shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)]">
+                                            <div class="p-2 px-4   shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)] bg-white">
+                                                <p class="mb-2 text-gray-500 ">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                                                <p class="text-gray-500">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2 id="accordion-collapse-heading-2" class="bg-white ">
+                                            <button type="button" class="flex items-center justify-between w-full  rtl:text-right text-black bg-white  px-4 font-semibold   gap-3 shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)]" data-accordion-target="#accordion-collapse-body-2" aria-expanded="true" aria-controls="accordion-collapse-body-2">
+                                                <span>What is Flowbite?</span>
+                                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                                </svg>
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2 bg-white  shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)]">
+                                            <div class="p-2 px-4   shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)] bg-white">
+                                                <p class="mb-2 text-gray-500 ">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                                                <p class="text-gray-500">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="accordion-collapse1" data-accordion="collapse" class="">
+                                    
+                                    <div>
+                                        <h2 id="accordion-collapse1-heading-3" class="bg-white ">
+                                            <button type="button" class="flex items-center justify-between w-full  rtl:text-right text-black bg-white  px-4 font-semibold   gap-3 shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)]" data-accordion-target="#accordion-collapse1-body-3" aria-expanded="true" aria-controls="accordion-collapse1-body-3">
+                                                <span>What is Flowbite?</span>
+                                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                                </svg>
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse1-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3 bg-white  shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)]">
+                                            <div class="p-2 px-4   shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)] bg-white">
+                                                <p class="mb-2 text-gray-500 ">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                                                <p class="text-gray-500">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2 id="accordion-collapse1-heading-4" class="bg-white ">
+                                            <button type="button" class="flex items-center justify-between w-full  rtl:text-right text-black bg-white  px-4 font-semibold   gap-3 shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)]" data-accordion-target="#accordion-collapse1-body-4" aria-expanded="true" aria-controls="accordion-collapse1-body-4">
+                                                <span>What is Flowbite?</span>
+                                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+                                                </svg>
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse1-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-4 bg-white  shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)]">
+                                            <div class="p-2 px-4   shadow-[0_4px_21px_0px_rgba(0,0,0,0.08)] bg-white">
+                                                <p class="mb-2 text-gray-500 ">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
+                                                <p class="text-gray-500">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+    <Footer></Footer>
+
+</main>
+</Layout>
+<style is:global>
+    .scroll-hide::-webkit-scrollbar {
+      display: none;
+    }
+  </style>

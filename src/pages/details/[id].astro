@@ -1,0 +1,52 @@
+---
+import data from "../../components/dataksum.json";
+import Details from "../../components/Details.svelte";
+import Layout from '../../layouts/Layout.astro';
+import Navbar from "../../components/Navbar.astro";
+import Navbarbottom from "../../components/Navbar.svelte";
+
+import Footer from "../../components/Footer.astro";
+
+
+export async function getStaticPaths() {
+  return data.map((item) => ({
+    params: { id: item.id }
+  }));
+}
+
+const { id } = Astro.params;
+const product = data.find((item) => item.id === id);
+---
+
+<Layout title="LEAP | KERALA STARTUP MISSION">
+
+<Navbar></Navbar>
+<Navbarbottom client:load></Navbarbottom>
+
+<main id="main pt-24">
+    <!-- <section class="breadcumb-section mt-10">
+        <div class="tf-container">
+            <div class="row">
+                <div class="col-lg-12 center z-index1">
+                    <h1 class="title md:text-7xl text-4xl font-extrabold">LEAP CO-WORKS</h1>
+                    <img class="bcrumb-ab" src="./assets/images/page/mask-bcrumb.png" alt="">
+                </div>
+            </div>
+    
+        </div>
+    </section> -->
+    <div>
+
+        {product ? (
+            <Details item={product} client:load />
+          ) : (
+            <p class="text-red-500 text-lg">Product not found</p>
+          )}
+    </div>
+
+    <Footer></Footer>
+
+      
+</main>
+
+</Layout>

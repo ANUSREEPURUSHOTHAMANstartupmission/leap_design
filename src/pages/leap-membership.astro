@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from "../components/Navbar.astro";
+import Navbarbottom from "../components/Navbar.svelte";
+import data from "../components/dataksum.json";
+import datapartners from "../components/datapartners.json";
+
+import Selection from '../components/Selection.astro'
+
+import Footer from '../components/Footer.astro'
+
+
+---
+
+<Layout title="LEAP | KERALA STARTUP MISSION">
+
+<Navbar></Navbar>
+<Navbarbottom client:load></Navbarbottom>
+
+<main id="main pt-24">
+
+    <section class="breadcumb-section mt-10">
+        <div class="tf-container">
+            <div class="row">
+                <div class="col-lg-12 center z-index1">
+                    <h1 class="title md:text-7xl text-4xl font-extrabold uppercase">LEAP Membership</h1>
+                    <img class="bcrumb-ab" src="./assets/images/page/mask-bcrumb.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="widget-adventure py-24">
+       
+        <div class="tf-container">
+            <div class=" mb-10">
+                <div>
+                     <h2 class="title-heading font-extrabold text-4xl uppercase">LEAP Membership</h2>
+                </div>
+                <div class="pt-6 text-justify">
+                    <p>
+                        LEAP will offer well designed workspace, meeting rooms, high speed internet connectivity and other essential amenities  for a productive environment. Through LEAP membership KSUM aims to foster a vibrant community of like-minded individuals and startups, creating opportunities for collaboration, knowledge sharing and networking. LEAP will become a single access point for entrepreneurs to enter the startup ecosystem.
+
+                    </p>
+                </div>
+             </div>
+            <div class="row">
+                <div class="mb-18">
+                    <span class="sub-title-heading text-main fs-28-46 font-yes animated">What</span>
+                    <h2 class="title-heading mb-18 animated text-3xl font-bold uppercase">we offer
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="">
+                       
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-hiking" role="tabpanel"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 col-lg-3 group">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0 overflow-hidden rounded-md">
+                                                <img src="/leap/22.avif"  alt="" class="group-hover:scale-125 duration-300 hover:rounded-md">
+                                            </a>
+                                            <div class="adventure-image">
+                                                <h6 class="title-ad">
+                                                    <a >Incubation Support</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0">
+                                                <img src="/leap/11.jpg" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Co Working Space</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0">
+                                                <img src="/leap/33.jpg" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Flexi Workstation</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3 flex">
+                                        <div class="tf-adventure flex-three mb-43 float-start">
+                                            <a  class="adventure-image flex-shrink-0">
+                                                <img src="/leap/33.avif" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Meeting Rooms & 
+                                                        Discussion Rooms</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0">
+                                                <img src="/leap/44.jpg" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Plug and play
+                                                        Workstations</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0">
+                                                <img src="/leap/55.avif" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >High speed 
+                                                        Internet</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3 group">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0 overflow-hidden rounded-md">
+                                                <img src="/leap/77.jpg" alt="" class="group-hover:scale-125 duration-300 hover:rounded-md">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Funding Support</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-lg-3">
+                                        <div class="tf-adventure flex-three mb-43">
+                                            <a  class="adventure-image  flex-shrink-0">
+                                                <img src="/leap/66.avif" alt="">
+                                            </a>
+                                            <div class="adventure-image">
+                                              
+                                                <h6 class="title-ad">
+                                                    <a >Mentorship Support</a>
+                                                </h6>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ 
+
+   
+
+    <Footer></Footer>
+
+</main>
+</Layout>
+<style is:global>
+    .scroll-hide::-webkit-scrollbar {
+      display: none;
+    }
+  </style>

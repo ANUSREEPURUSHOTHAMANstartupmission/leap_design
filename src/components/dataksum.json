@@ -1,0 +1,34 @@
+[
+    {
+      "title": "Kerala Startup Mission- Kozhikode",
+      "image": "/leap/k1.png",
+      "id": "p1",
+      "address": "Govt.Cyberpark, Nellikode P.O, Kozhikode",
+      "poc":"Kavya K S",
+      "email":"kavya@startupmission.in",
+      "number":"+919072702096",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio, nam atque corrupti veritatis deleniti, ad nihil numquam doloremque facilis eius aspernatur asperiores et accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae praesentium recusandae architecto quos, enim expedita maxime, cumque unde quasi voluptate eos? Accusamus alias iste totam. Quisquam expedita officia beatae!",
+      "s1_type":"Coworking Space",
+      "s1_subsidy":"40",
+      "s1_rate":"Rate Per Seats",
+      "s1_base":"5500",
+      "s1_after":"3300",
+      "s2_type":"Closed cabin",
+      "s2_subsidy":"40",
+      "s2_rate":"Rate Per Seats",
+      "s2_base":"6000",
+      "s2_after":"3600"
+      
+    },
+    {
+        "title": "Kerala Startup Mission- Kozhikode",
+        "image": "/branding/Antioxidant Rich Papaya Candy.png",
+        "id": "p1",
+        "address": "Govt.Cyberpark, Nellikode P.O, Kozhikode",
+        "poc":"Kavya K S",
+        "email":"kavya@startupmission.in",
+        "number":"+919072702096",
+        "desc": "ICAR - Indian Agricultural Research Institute (IARI), New Delhi"
+      }
+  ]
+  

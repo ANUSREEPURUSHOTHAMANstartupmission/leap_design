@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Al-Ameen College, Edathala",
+    "image": "/leap/k1.png",
+    "id": "p1",
+    "address": "address",
+    "poc": "Dr Kala N",
+    "email": "kalariteesha@gmail.com",
+    "number": "7012921484",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    "facilities": [
+      "Co-Working Space, Rs 2000 Per Seat, WiFi Facility Available, 24x7 Access to AI Space, Registered as a Section 8 Company",
+      "IoT Lab",
+      "3D Printing Facilities",
+      "Provide HR Resources for Marketing and Socio-Economic Surveys",
+      "Lab Space for Conducting Chemical Experiments",
+      "Water Quality Analysis Lab Providing a Range of Services Related to Analyzing and Testing the Quality of Water",
+      "Access to Biotechnology Lab for Research and Experimentation",
+      "Gives Hands-On Training for Music Programming and Production",
+      "Live Sound Reinforcement",
+      "Sync Sound",
+      "Specialized Services for Recording Voiceovers for Commercials, Audiobooks, and Other Projects",
+      "Tour Assistance and Guidance",
+      "Offering Comprehensive Support Focused on Content Writing"
+    ]
+  },
+  {
+    "title": "MI Zone - Kannur",
+    "image": "/leap/k1.png",
+    "id": "p2",
+    "address": "address",
+    "poc": "Subhash",
+    "email": "kavya@startupmission.in",
+    "number": "+919072702096",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    "facilities": [
+      "International standard workspace",
+      "Mentoring by domain and Industry experts",
+      "Funding Opportunities/Angel capital support",
+      "Networking and Eco Systems",
+      "Trainings and Workshops",
+      "Marketing Channels",
+      "Govt & Public Agencies Liaising",
+      "Value added services",
+      "Market connect"
+    ]
+  }
+]
