@@ -124,7 +124,7 @@
     <div class="w-fit container mx-auto sm:items-center sm:justify-between">
         <div class="mb-8 gap-2  font-medium sm:bg-transparent p-5 sm:p-0 rounded-md flex items-center justify-center">
             <img src="/img/logo11.svg" alt="logo" class="md:h-14 h-12">
-            <img src="/img/leap.svg" alt="logo" class="md:h-14 h-12">
+            <img src="/leap/leap.svg" alt="logo" class="md:h-14 h-12">
   
         </div>
          <nav>
