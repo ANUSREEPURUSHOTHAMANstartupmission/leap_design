@@ -48,7 +48,7 @@
   {
     "title": "Dr. Moopen's iNEST, Wayandu",
     "image": "/leap/k1.png",
-    "id": "p",
+    "id": "p3",
     "address": "address",
     "poc": "Anjana Joseph",
     "email": "anjana.joseph@drmoopensmc.ac.in",
@@ -66,16 +66,54 @@
     ]
   },
   {
-    "title": "",
+    "title": "ZilCubator, Manjeri",
     "image": "/leap/k1.png",
-    "id": "p",
+    "id": "p4",
+    "address": "address",
+    "poc": "Shibil C",
+    "email": "shibil@zilmoney.com",
+    "number": "7994949944",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    "facilities": [
+     "US Market Expansion",
+     "Fund of Funds",
+     "ZilCubator Investments",
+     "Business Events",
+     "Mentorship","Dining Area","24/7 Surveillance","Air conditioned workspace ",
+     "High Speed network",
+     "Gym Coffee and Snacks Suite room Applicable"
+    ]
+  },
+  {
+    "title": "Adi Shankara Institute of Engineering and Technology",
+    "image": "/leap/k1.png",
+    "id": "p4",
+    "address": "address",
+    "poc": "Dr Eldose KK",
+    "email": "eldhosekk.me@adishankara.ac.in",
+    "number": "9847664564",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    "facilities": [
+     "Includes free electricity","Incubation space","water", "Wi-Fi","security."
+    ]
+  },
+  {
+    "title": "Startups Valley AJCE TBI",
+    "image": "/leap/k1.png",
+    "id": "p5",
     "address": "address",
     "poc": "",
     "email": "",
     "number": "",
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
     "facilities": [
-     
+     "Office Space ",
+     "AC rooms with furniture",
+    "Telecomm facility and Internet ",
+    "Shared Resources",
+    "Conference Room",
+    "Meeting Room",
+    "Library","Laser Printer","Photocopier","Scanner","Teleconferencing facilities","Fab Lab Facility","Test and analysis Labs","Cafeteria"
     ]
   }
 ]
