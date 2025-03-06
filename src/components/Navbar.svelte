@@ -84,10 +84,10 @@
      <main class=" flex  items-start px-7 my-auto">
         <div style="font-family: Museo-Sans, sans-serif;" class="flex my-auto  {scrolled?'text-black':'text-black'}">
             <a href="/"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Home</a>
-            <a href="/leap-co-works"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">LEAP CO-WORKS</a>
-            <a href="/leap-membership"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">LEAP MEMBERSHIP</a>
+            <a href="/#leap_co_works"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">LEAP CO-WORKS</a>
+            <a href="/#leap_membership"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">LEAP MEMBERSHIP</a>
             
-            <a href="/#facility-booking"  class="md:flex hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm">FACILITY BOOKING</a>
+            <a href="/#leap_facility" class="md:flex hidden cursor-pointer  px-4 py-3  md:py-1 uppercase   text-sm">FACILITY BOOKING</a>
             <!-- <a href="/#LEAP_Membership"  class="md:flex cursor-pointer hidden px-4 py-3  md:py-1 uppercase   text-sm">Partners</a> -->
            
         </div>
@@ -133,13 +133,13 @@
                         <a href="/"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">Home</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/leap-co-works"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">LEAP CO-WORKS</a>
+                      <a href="/#leap_co_works"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">LEAP CO-WORKS</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#leap-membership"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">LEAP MEMBERSHIP</a>
+                      <a href="/#leap_membership"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">LEAP MEMBERSHIP</a>
                     </li> 
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#facility-booking"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">FACILITY BOOKING</a>
+                      <a href="/#leap_facility"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">FACILITY BOOKING</a>
                     </li>
   
                     

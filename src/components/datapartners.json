@@ -44,5 +44,38 @@
       "Value added services",
       "Market connect"
     ]
+  },
+  {
+    "title": "Dr. Moopen's iNEST, Wayandu",
+    "image": "/leap/k1.png",
+    "id": "p",
+    "address": "address",
+    "poc": "Anjana Joseph",
+    "email": "anjana.joseph@drmoopensmc.ac.in",
+    "number": "8156898618",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    "facilities": [
+     "Fully furnished office space featuring high-end computing facilities",
+     "High-speed internet",
+     "Fully air-conditioned co-working areas",
+     "Private cabins and meeting rooms",
+     "Laboratory facilities equipped for wet lab work",
+     "Specialized instruments for biomaterials research",
+     "3D Bioprinting", 
+     "Molecular Biology and Tissue Engineering."
+    ]
+  },
+  {
+    "title": "",
+    "image": "/leap/k1.png",
+    "id": "p",
+    "address": "address",
+    "poc": "",
+    "email": "",
+    "number": "",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    "facilities": [
+     
+    ]
   }
 ]

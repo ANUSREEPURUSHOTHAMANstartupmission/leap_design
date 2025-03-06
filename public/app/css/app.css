@@ -1803,9 +1803,9 @@
   transform: translate(-50%, -50%);
 }
 
-.travel-video {
+/* .travel-video {
   padding: 20px 35px 0px 0px;
-}
+} */
 .travel-video .mask-video {
   position: absolute;
   left: -12.5%;
@@ -2079,10 +2079,10 @@
   padding-top: 245px;
   padding-bottom: 119px;
 }
-.about-us-h3 .about-us-h3-image {
+/* .about-us-h3 .about-us-h3-image {
   padding-left: 28px;
   padding-right: 71px;
-}
+} */
 .about-us-h3 .about-us-h3-image .image-explore {
   border-radius: 14px;
 }
@@ -2680,9 +2680,9 @@
   z-index: 1;
 }
 
-.widget-destination1 {
+/* .widget-destination1 {
   padding-top: 120px;
-}
+} */
 .widget-destination1.destination-home5 .destination-explore {
   margin-top: 66px;
   margin-bottom: -5px;
@@ -4434,7 +4434,7 @@
   top: 15%;
 }
 .discount-h5 .booking-style-2 {
-  padding: 45px 37px 42px 43px;
+  padding: 33px;
 }
 .discount-h5 .booking-style-2 .title {
   font-size: 26px;
@@ -7178,7 +7178,7 @@
 
 .destination-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 66px;
 }
 
@@ -7427,7 +7427,9 @@
   display: none;
 }
 .tf-widget-blog .blog-content {
-  padding: 29px 66px 26px 45px;
+  /* padding: 29px 66px 26px 45px; */
+  padding: 20px;
+
 }
 .tf-widget-blog .blog-content .meta-list li {
   font-size: 14px;
@@ -7855,7 +7857,6 @@
 /* widget clip text
 -------------------------------------------------------------- */
 .clip-text {
-  font-size: 105px;
   font-weight: 800;
   line-height: 89px;
   text-align: center;
@@ -7867,7 +7868,25 @@
   .clip-text {
     color: transparent;
     -webkit-background-clip: text;
-    background-image: url(../../assets/images/page/clip-text.jpg);
+    background-image: url(/leap/goldcard.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.clip-text1 {
+  font-weight: 800;
+  line-height: 89px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: -10px;
+  margin-bottom: -5px;
+}
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .clip-text1 {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: url(/leap/platinumbg.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -7900,7 +7919,7 @@
   right: -50px;
   content: "";
   clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-  background: linear-gradient(180deg, rgba(45, 138, 6, 0.1), rgb(49, 132, 14));
+  background: linear-gradient(180deg, rgba(45, 138, 6, 0.1), rgb(6 120 159));
   height: 238px;
   opacity: 0;
   visibility: hidden;
@@ -7913,7 +7932,7 @@
   top: -50px;
   content: "";
   clip-path: polygon(100% 0, 4% 100%, 100% 66%);
-  background: #428E22;
+  background: #00AEEF;
   height: 212px;
   width: 98px;
   opacity: 0;
@@ -8123,11 +8142,9 @@
   color: #00AEEF;
 }
 .tf-icon-box .des-icon {
-  font-size: 16px;
   font-weight: 400;
   line-height: 30px;
   color: #4F545A;
-  text-transform: capitalize;
 }
 /* widget Testimonial
 -------------------------------------------------------------- */

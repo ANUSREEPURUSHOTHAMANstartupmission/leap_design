@@ -91,7 +91,7 @@ import Footer from "../components/Footer.astro";
                 </section>
 
 
-                <section class="about-us-h5  bg-1 mt-24">
+                <section class="about-us-h5  bg1 mt-24" id="about">
                     <div class="tf-container">
                         <div class="flex md:flex-row flex-col g gap-4 ">
                             <div class=" md:w-3/5 w-full py-10 flex flex-col">
@@ -107,17 +107,20 @@ import Footer from "../components/Footer.astro";
                                   
                                 </div>
                             </div>
-                            <div class=" md:w-1/5 w-full flex flex-col">
-                                <div class="overflow-hidden">
-                                    <img src="/leap/image.png" alt="image"  class="w-full">
+                            <div class="md:w-2/5 w-full flex flex-col">
+                                <div class="perspective-1000"  data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1500">
+                                    <img src="/leap/lk.png" alt="image" class="w-full transition-transform duration-300 transform-gpu hover:scale-105 hover:rotate-x-6 hover:rotate-y-6">
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </section>
 
+                
 
 
+<!-- 
                 <section class="widget-adventure py-24">
                     <div class="tf-container">
                         <div class="row">
@@ -255,6 +258,85 @@ import Footer from "../components/Footer.astro";
                             </div>
                         </div>
                     </div>
+                </section> -->
+
+
+
+                <section class="widget-destination1 pb-24 relative my-10">
+                    <img src="./assets/images/page/shape2.png" alt="image" class="shape-destination">
+                    <div class="tf-container">
+                        <div class="row mb-50 z-index3 relative">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="mb-18">
+                                        <span class="sub-title-heading text-main fs-28-46 font-yes animated">What</span>
+                                        <h2 class="title-heading mb-18 animated text-3xl font-bold uppercase">we offer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" grid md:grid-cols-4 grid-cols-2 gap-4 items-center justify-center z-index3 relative">
+                            <div class="destination-tour items-center justify-center center">
+                                <a  class="destination-image w-full items-center justify-center">
+                                    <img src="/leap/22.avif" alt="">
+                                </a>
+                                
+                                <div class="title-tour"><a >Incubation Support</a></div>
+                            </div>
+                            <div class="destination-tour center flex flex-col items-center justify-center">
+                                <a  class="destination-image w-full items-center justify-center">
+                                    <img src="/leap/11.jpg" alt="">
+                                </a>
+                                
+                                <div class="title-tour"><a >Co Working Space</a></div>
+                            </div>
+                            <div class="destination-tour center flex flex-col items-center justify-center">
+                                <a  class="destination-image w-full items-center justify-center">
+                                    <img src="/leap/33.jpg" alt="">
+                                </a>
+                                
+                                <div class="title-tour"><a >Flexi Workstation</a></div>
+                            </div>
+                            <div class="destination-tour center flex flex-col items-center justify-center">
+                                <a  class="destination-image w-full items-center justify-center">
+                                    <img src="/leap/33.avif" alt="">
+                                </a>
+                                
+                                <div class="title-tour"><a >Meeting Rooms & Discussion Rooms</a></div>
+                            </div>
+                        </div>
+                        <div class="destination-grid z-index3 relative">
+                           
+                            <div class="destination-tour center flex flex-col items-center justify-center">
+                                <a  class="destination-image w-full items-center justify-center">
+                                    <img src="/leap/44.jpg" alt="">
+                                </a>
+                                
+                                <div class="title-tour"><a >Plug and play Workstations</a></div>
+                            </div>
+                            <div class="destination-tour center flex flex-col items-center justify-center">
+                                <a  class="destination-image w-full items-center justify-center">
+                                    <img src="/leap/55.avif" alt="">
+                                </a>
+                                
+                                <div class="title-tour"><a >High speed Internet</a></div>
+                            </div>
+                            <div class="destination-tour center flex flex-col items-center justify-center">
+                                <a  class="destination-image w-full items-center justify-center">
+                                    <img src="/leap/77.jpg" alt="">
+                                </a>
+                                
+                                <div class="title-tour"><a >Funding Support</a></div>
+                            </div>
+                            <div class="destination-tour center flex flex-col items-center justify-center">
+                                <a  class="destination-image w-full items-center justify-center">
+                                    <img src="/leap/66.avif" alt="">
+                                </a>
+                                
+                                <div class="title-tour"><a >Mentorship Support</a></div>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
 
@@ -265,7 +347,7 @@ import Footer from "../components/Footer.astro";
                             <div class="tf-widget-destination  " data-wow-delay="0.1s">
                                 <a href="/#leap_co_works" class="destination-imgae">
                                     <!-- <span class="tour">3 tours</span> -->
-                                    <img src="/leap/cowork.png" alt="">
+                                    <img src="/leap/leap11.jpeg" alt="">
                                 </a>
                                 <div class="destination-content">
                                     <span class="nation">LEAP CO-WORKS</span>
@@ -281,7 +363,7 @@ import Footer from "../components/Footer.astro";
                             <div class="tf-widget-destination  " data-wow-delay="0.2s">
                                 <a href="/#leap_membership" class="destination-imgae">
                                     <!-- /<span class="tour">7 tours</span> -->
-                                    <img src="./assets/images/destination/list1.jpg" alt="">
+                                    <img src="/leap/leap22.jpeg" alt="">
                                 </a>
                                 <div class="destination-content">
                                     <span class="nation">LEAP MEMBERSHIP</span>
@@ -297,7 +379,7 @@ import Footer from "../components/Footer.astro";
                             <div class="tf-widget-destination  " data-wow-delay="0.3s">
                                 <a href="/#leap_facility" class="destination-imgae">
                                     <!-- <span class="tour">9 tours</span> -->
-                                    <img src="/leap/facility.png" alt="">
+                                    <img src="/leap/leap33.png" alt="">
                                 </a>
                                 <div class="destination-content">
                                     <span class="nation">FACILITY BOOKING</span>
@@ -423,7 +505,7 @@ import Footer from "../components/Footer.astro";
                                 <div class="image-about-us relative p-10">
                                     <img src="./assets/images/page/vector3.png" alt="image" class="mask1">
                                     <!-- <img src="./assets/images/page/fly3.png" alt="image" class="mask2"> -->
-                                    <img src="/leap/l1.png" alt="image" class="image-main">
+                                    <img src="/leap/leapf.svg" alt="image" class="image-main">
                                 </div>
                             </div>
                             <div class="col-md-6 pt-8">
@@ -473,7 +555,7 @@ import Footer from "../components/Footer.astro";
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-12 md:pr-16 mt-8">
-                                        <a href="/leap-co-works" class="btn-main">
+                                        <a href="/leap-membership" class="btn-main">
                                             <p class="btn-main-text">View More</p>
                                             <p class="iconer">
                                                 <i class="icon-13"></i>
@@ -619,12 +701,12 @@ import Footer from "../components/Footer.astro";
                             <div class="col-md-6">
                                 <div class="image-about-h4-wrap relative">
                                     <div class="image-about-item relative about-wrap-left">
-                                        <img src="/leap/25.png" alt="image">
+                                        <img src="/leap/ll1.svg" alt="image">
                                         <img src="./assets/images/page/shape5.1.png" alt="image" class="shape-about-h4">
 
                                     </div>
                                     <div class="image-about-item relative about-wrap-right1">
-                                        <img src="/leap/24.png"  alt="image">
+                                        <img src="/leap/facility11.png"  alt="image">
                                         <img src="./assets/images/page/shape5.1.png" alt="image" class="shape-about-h4">
 
                                     </div>
@@ -854,4 +936,36 @@ import Footer from "../components/Footer.astro";
 
     <!-- /preload -->
 
+    
+    <script is:inline>
+        (function () {
+           $('.counterFour').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
+               if (visible) {
+                   $(this).find('.timer').each(function () {
+                       var $this = $(this);
+                       $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                           duration: 2000,
+                           easing: 'swing',
+                           step: function () {
+                               $this.text(Math.ceil(this.Counter));
+                           }
+                       });
+                   });
+                   $(this).unbind('inview');
+               }
+           });
+
+       }());
+   </script>
+
+    <script is:inline>
+        // Initialize VanillaTilt on elements with 'data-tilt'
+        VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+            max: 5,  // Very small tilt angle (5 degrees)
+            speed: 400,  // Transition speed
+            glare: false,  // No glare effect
+            perspective: 1500  // Larger perspective for subtle depth
+        });
+    </script>
+      <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     

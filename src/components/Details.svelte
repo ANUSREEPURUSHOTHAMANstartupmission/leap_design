@@ -74,8 +74,8 @@
                                         {#if item.s1_type}
                                         <div class="">
                                             <div class="banner-part-item booking-style-2 relative bg-part-gray overflow-hidden">
-                                                <p class="text-xl font-bold text-black hover:text-black pb-2">{item.s1_type}</p>
-                                                <p class="text-lg font-bold">{item.s1_subsidy}% Subsidy</p>
+                                                <p class="text-lg font-bold text-black hover:text-black pb-2">{item.s1_type}</p>
+                                                <span class="text-sm font-bold">{item.s1_subsidy}% Subsidy</span>
                                                 <span class="text-main sale-up pt-6 pb-4">{item.s1_rate}</span>
                                                 <div class=" flex justify-between mb-6">
                                                     <p class="text-main   font-bold">Base Rate</p>
@@ -92,8 +92,8 @@
                                         {#if item.s2_type}
                                         <div class="">
                                             <div class="banner-part-item booking-style-2 relative bg-part-gray overflow-hidden">
-                                                <p class="text-xl font-bold text-black hover:text-black pb-2">{item.s2_type}</p>
-                                                <p class="text-lg font-bold">{item.s2_subsidy}% Subsidy</p>
+                                                <p class="text-lg font-bold text-black hover:text-black pb-2">{item.s2_type}</p>
+                                                <span class="text-sm font-bold">{item.s2_subsidy}% Subsidy</span>
                                                 <span class="text-main sale-up pt-6 pb-4">{item.s2_rate}</span>
                                                 <div class=" flex justify-between mb-6">
                                                     <p class="text-main   font-bold">Base Rate</p>
@@ -110,8 +110,8 @@
                                         {#if item.s3_type}
                                         <div class="">
                                             <div class="banner-part-item booking-style-2 relative bg-part-gray overflow-hidden">
-                                                <p class="text-xl font-bold text-black hover:text-black pb-2">{item.s3_type}</p>
-                                                <p class="text-lg font-bold">{item.s3_subsidy}% Subsidy</p>
+                                                <p class="text-lg font-bold text-black hover:text-black pb-2">{item.s3_type}</p>
+                                                <span class="text-sm font-bold">{item.s3_subsidy}% Subsidy</span>
                                                 <span class="text-main sale-up pt-6 pb-4">{item.s3_rate}</span>
                                                 <div class=" flex justify-between mb-6">
                                                     <p class="text-main   font-bold">Base Rate</p>
@@ -128,8 +128,8 @@
                                         {#if item.s4_type}
                                         <div class="">
                                             <div class="banner-part-item booking-style-2 relative bg-part-gray overflow-hidden">
-                                                <p class="text-xl font-bold text-black hover:text-black pb-2">{item.s4_type}</p>
-                                                <p class="text-lg font-bold">{item.s4_subsidy}% Subsidy</p>
+                                                <p class="text-lg font-bold text-black hover:text-black pb-2">{item.s4_type}</p>
+                                                <span class="text-sm font-bold">{item.s4_subsidy}% Subsidy</span>
                                                 <span class="text-main sale-up pt-6 pb-4">{item.s4_rate}</span>
                                                 <div class=" flex justify-between mb-6">
                                                     <p class="text-main   font-bold">Base Rate</p>
