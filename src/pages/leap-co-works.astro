@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from "../components/Navbar.astro";
-import Navbarbottom from "../components/Navbar.svelte";
+import Navbarbottom from "../components/Navbarsub.svelte";
 import data from "../components/dataksum.json";
 import datapartners from "../components/datapartners.json";
 
@@ -23,7 +23,7 @@ import Footer from '../components/Footer.astro'
         <div class="tf-container">
             <div class="row">
                 <div class="col-lg-12 center z-index1">
-                    <h1 class="title md:text-7xl text-4xl font-extrabold">LEAP CO-WORKS</h1>
+                    <h1 class="title md:text-7xl text-4xl font-extrabold">CO-WORKS</h1>
                     <img class="bcrumb-ab" src="./assets/images/page/mask-bcrumb.png" alt="">
                 </div>
             </div>
@@ -176,6 +176,63 @@ import Footer from '../components/Footer.astro'
 
 
 
+    <section class="offer-package py-24 bg-1 relative">
+        <img src="./assets/images/page/feature.jpg" alt="image" class="feature-ofer">
+        <div class="tf-container">
+            <div class="row align-center z-index3 relative">
+                <div class="col-lg-4">
+                    <div class="content">
+                        <div class="mb-50">
+                            <p class="des-heading fadeInUp wow">Welcome to our Print 128 website! We are a
+                                professional
+                                company that offers a wide range of printing
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class=" grid md:grid-cols-2 grid-cols-1 gap-4">
+                        <div class="tf-widget-destination  " data-wow-delay="0.1s">
+                            <a href="#ksum" class="destination-imgae">
+                                <!-- <span class="tour">3 tours</span> -->
+                                <img src="/leap/leap11.jpeg" alt="">
+                            </a>
+                            <div class="destination-content">
+                                <span class="nation">KSUM Owned centres</span>
+                                <div class="flex-two btn-destination">
+                                    <h6 class="title"><a href="#ksum">View More</a></h6>
+                                    <a href="#ksum" class="flex-five btn-view">
+                                        <i class="icon-Vector-32"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tf-widget-destination  " data-wow-delay="0.2s">
+                            <a href="#ksum_partnered" class="destination-imgae">
+                                <!-- /<span class="tour">7 tours</span> -->
+                                <img src="/leap/leap22.jpeg" alt="">
+                            </a>
+                            <div class="destination-content">
+                                <span class="nation">KSUM Partnered Center</span>
+                                <div class="flex-two btn-destination">
+                                    <h6 class="title"><a href="#ksum_partnered">View More</a></h6>
+                                    <a href="#ksum_partnered" class="flex-five btn-view">
+                                        <i class="icon-Vector-32"></i>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<!-- 
     <section class="widget-destination1 pt-24 relative my-10">
         <img src="./assets/images/page/shape2.png" alt="image" class="shape-destination">
         <div class="tf-container">
@@ -251,7 +308,7 @@ import Footer from '../components/Footer.astro'
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     
@@ -489,7 +546,7 @@ import Footer from '../components/Footer.astro'
 
 
      
-    <section class="about-us container">
+    <section class="about-us container" id="ksum">
         <div class="tf-container">
             <div class="row pt-115">
                 <div class="col-lg-6">

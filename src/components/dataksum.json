@@ -43,7 +43,10 @@
     },
     {
       "title": "Kerala Startup Mission- Kochi",
-      "image": "/leap/k1.png",
+      "image": "/leap/isc2.png",
+      "image1":"/leap/isc1.png",
+      "image2":"/leap/isc3.png",
+
       "id": "p3",
       "address": "Kerala Technology Innovation Zone, Kalamassery, Kochi",
       "poc":"Rahul Shah",
@@ -92,24 +95,9 @@
     },
    
     {
-      "title": "Startup Dreams - Trivandum",
-      "image": "/leap/k1.png",
-      "id": "p5",
-      "address": "1st floor, Ambedkar Bhavan, Mannanthala, Trivandrum",
-      "poc":"Krishnakumar M",
-      "email":"krishnakumar@startupmission.in",
-      "number":"9961822685",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio, nam atque corrupti veritatis deleniti, ad nihil numquam doloremque facilis eius aspernatur asperiores et accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae praesentium recusandae architecto quos, enim expedita maxime, cumque unde quasi voluptate eos? Accusamus alias iste totam. Quisquam expedita officia beatae!",
-      "s1_type":"Coworking Space",
-      "s1_subsidy":"40",
-      "s1_rate":"Rate Per Seats",
-      "s1_base":"5500",
-      "s1_after":"3300"
-    },
-    {
       "title": "Kerala Startup Mission- Kasargod",
       "image": "/leap/k1.png",
-      "id": "p",
+      "id": "p5",
       "address": "ASAP Community Skill park, Kasaragod",
       "poc":"Kavya K S",
       "email":"kavya@startupmission.in",
@@ -124,7 +112,7 @@
     {
       "title": "Kerala Startup Mission- Palakkad",
       "image": "/leap/k1.png",
-      "id": "p",
+      "id": "p6",
       "address": "GPTC Palakkad ",
       "poc":"Rahul Shah",
       "email":"s.rahul@startupmission.in",
@@ -139,7 +127,7 @@
     {
       "title": "Kerala Startup Mission- Kollam",
       "image": "/leap/k1.png",
-      "id": "p",
+      "id": "p7",
       "address": "ASAP Community Skill park, Kulakada, Kollam",
       "poc":"Krishnakumar M",
       "email":"krishnakumar@startupmission.in",

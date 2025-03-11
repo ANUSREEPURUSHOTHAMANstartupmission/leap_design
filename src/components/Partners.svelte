@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                         
-                            <div class="row pb-0 mb-10">
+                            <div class="row pb-0 mb-10 hidden">
                                 <div class="col-lg-12">
                                     <div class="information-content-tour">
                                        
