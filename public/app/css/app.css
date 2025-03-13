@@ -7947,7 +7947,7 @@
   font-size: 55px;
 }
 .icon-box-style1 .des-icon {
-  margin-bottom: 38px;
+  /* margin-bottom: 38px; */
 }
 .icon-box-style1 .icons-link {
   font-size: 14px;
@@ -8920,7 +8920,6 @@
   padding: 25px 22px 28px 22px;
   border: 1px solid #EDEEEE;
   border-radius: 8px;
-  max-width: 214px;
   width: 100%;
   margin: 0px 8.5px;
   -webkit-transition: all 0.3s ease;

@@ -1,93 +1,147 @@
 [
     {
       "title": "Kerala Startup Mission- Kozhikode",
-      "image": "/leap/k1.png",
+
+      "image": "/leap/calicut.png",
+      "image_main":"/leap/calicut gov.png",
+
+
       "id": "p1",
+      
       "address": "Govt.Cyberpark, Nellikode P.O, Kozhikode",
       "poc":"Kavya K S",
       "email":"kavya@startupmission.in",
       "number":"+919072702096",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio, nam atque corrupti veritatis deleniti, ad nihil numquam doloremque facilis eius aspernatur asperiores et accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae praesentium recusandae architecto quos, enim expedita maxime, cumque unde quasi voluptate eos? Accusamus alias iste totam. Quisquam expedita officia beatae!",
+      "desc": "",
+     
       "s1_type":"Coworking Space",
+      "s1_icon":"/leap/co_work.png",
       "s1_subsidy":"40",
       "s1_rate":"Rate Per Seats",
       "s1_base":"5500",
       "s1_after":"3300",
+      
       "s2_type":"Closed cabin",
+      "s2_icon":"/leap/Closed cabin.png",
       "s2_subsidy":"40",
       "s2_rate":"Rate Per Seats",
       "s2_base":"6000",
-      "s2_after":"3600"
+      "s2_after":"3600",
+      
+      "images":[
+        "/leap/c1.png",
+        "/leap/c2.png"
+      ]
       
     },
     {
       "title": "Kerala Startup Mission- Kozhikode",
-      "image": "/leap/k1.png",
+      
+      "image": "/leap/ul.jpeg",
+      "image_main":"/leap/ul_main.png",
+
+
       "id": "p2",
+
       "address": "2nd Floor, UL CyberPark Rd, Nellikkode, Kozhikode",
       "poc":"Kavya K S",
       "email":"kavya@startupmission.in",
       "number":"+919072702096",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio, nam atque corrupti veritatis deleniti, ad nihil numquam doloremque facilis eius aspernatur asperiores et accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae praesentium recusandae architecto quos, enim expedita maxime, cumque unde quasi voluptate eos? Accusamus alias iste totam. Quisquam expedita officia beatae!",
+      "desc": "",
+
       "s1_type":"Coworking Space",
+      "s1_icon":"/leap/co_work.png",
       "s1_subsidy":"40",
       "s1_rate":"Rate Per Seats",
       "s1_base":"5500",
       "s1_after":"3300",
+
       "s2_type":"Closed cabin",
+      "s2_icon":"/leap/Closed cabin.png",
       "s2_subsidy":"40",
       "s2_rate":"Rate Per Seats",
       "s2_base":"6000",
-      "s2_after":"3600"
+      "s2_after":"3600",
+
+      "images":[
+        "/leap/ul1.png",
+        "/leap/ul2.png",
+        "/leap/ul3.png",
+        "/leap/ul4.png"
+      ]
       
     },
     {
       "title": "Kerala Startup Mission- Kochi",
-      "image": "/leap/isc2.png",
-      "image1":"/leap/isc1.png",
-      "image2":"/leap/isc3.png",
+
+      "image": "/leap/kochimain.png",
+      "image_main":"/leap/kochi 1.png",
 
       "id": "p3",
+
       "address": "Kerala Technology Innovation Zone, Kalamassery, Kochi",
       "poc":"Rahul Shah",
       "email":"s.rahul@startupmission.in",
       "number":"7403180193",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio, nam atque corrupti veritatis deleniti, ad nihil numquam doloremque facilis eius aspernatur asperiores et accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae praesentium recusandae architecto quos, enim expedita maxime, cumque unde quasi voluptate eos? Accusamus alias iste totam. Quisquam expedita officia beatae!",
+      "desc": "",
+
       "s1_type":"Coworking Space",
+      "s1_icon":"/leap/co_work.png",
       "s1_subsidy":"40",
       "s1_rate":"Rate Per Seats",
       "s1_base":"5500",
       "s1_after":"3300",
 
       "s2_type":"Closed cabin",
+      "s2_icon":"/leap/Closed cabin.png",
       "s2_subsidy":"40",
       "s2_rate":"Rate Per Seats",
       "s2_base":"6000",
       "s2_after":"3600",
 
       "s3_type":"Closed cabin (Sqft wise)",
+      "s3_icon":"/leap/Closed cabin.png",
       "s3_subsidy":"40",
       "s3_rate":"Rate Per sq.ft",
       "s3_base":"100",
-      "s3_after":"60"
+      "s3_after":"60",
+
+
+      "images":[
+        "/leap/kochi1.png",
+        "/leap/kochi2.png",
+         "/leap/kochi3.png",
+        "/leap/kochi4.png",
+         "/leap/kochi5.png",
+        "/leap/kochi6.png",
+        "/leap/kochi7.png"
+
+
+      ]
       
     },
     {
       "title": "Kerala Startup Mission- Trivandum",
-      "image": "/leap/k1.png",
+      
+      "image": "/leap/tvm 1.png",
+      "image_main":"/leap/kochi 1.png",
+      
       "id": "p4",
       "address": "G3B, Thejaswini, Technopark Campus, Kariyavattom, Trivandrum",
       "poc":"Krishnakumar M",
       "email":"krishnakumar@startupmission.in",
       "number":"9961822685",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio, nam atque corrupti veritatis deleniti, ad nihil numquam doloremque facilis eius aspernatur asperiores et accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae praesentium recusandae architecto quos, enim expedita maxime, cumque unde quasi voluptate eos? Accusamus alias iste totam. Quisquam expedita officia beatae!",
+      "desc": "",
+      
       "s1_type":"Coworking Space",
+      "s1_icon":"/leap/co_work.png",
       "s1_subsidy":"40",
       "s1_rate":"Rate Per Seats",
       "s1_base":"5500",
       "s1_after":"3300",
 
       "s2_type":"Closed cabin",
+      "s2_icon":"/leap/Closed cabin.png",
       "s2_subsidy":"40",
       "s2_rate":"Rate Per Seats",
       "s2_base":"6000",
@@ -102,7 +156,7 @@
       "poc":"Kavya K S",
       "email":"kavya@startupmission.in",
       "number":"+919072702096",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio, nam atque corrupti veritatis deleniti, ad nihil numquam doloremque facilis eius aspernatur asperiores et accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae praesentium recusandae architecto quos, enim expedita maxime, cumque unde quasi voluptate eos? Accusamus alias iste totam. Quisquam expedita officia beatae!",
+      "desc": "",
       "s1_type":"Coworking Space",
       "s1_subsidy":"40",
       "s1_rate":"Rate Per Seats",
@@ -117,7 +171,7 @@
       "poc":"Rahul Shah",
       "email":"s.rahul@startupmission.in",
       "number":"7403180193",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio, nam atque corrupti veritatis deleniti, ad nihil numquam doloremque facilis eius aspernatur asperiores et accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae praesentium recusandae architecto quos, enim expedita maxime, cumque unde quasi voluptate eos? Accusamus alias iste totam. Quisquam expedita officia beatae!",
+      "desc": "",
       "s1_type":"Coworking Space",
       "s1_subsidy":"40",
       "s1_rate":"Rate Per Seats",
@@ -132,7 +186,7 @@
       "poc":"Krishnakumar M",
       "email":"krishnakumar@startupmission.in",
       "number":"9961822685",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio, nam atque corrupti veritatis deleniti, ad nihil numquam doloremque facilis eius aspernatur asperiores et accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repudiandae praesentium recusandae architecto quos, enim expedita maxime, cumque unde quasi voluptate eos? Accusamus alias iste totam. Quisquam expedita officia beatae!",
+      "desc": "",
       "s1_type":"Coworking Space",
       "s1_subsidy":"40",
       "s1_rate":"Rate Per Seats",

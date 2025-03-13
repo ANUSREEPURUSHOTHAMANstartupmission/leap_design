@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel with 2 Active Slides</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x/dist/cdn.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+    <div x-data="carousel()" class="relative w-full max-w-4xl overflow-hidden">
+        <div class="flex transition-transform duration-500 ease-out"
+            :style="'transform: translateX(-' + (currentIndex * 50) + '%)'">
+            <template x-for="(image, index) in images" :key="index">
+                <div class="w-1/2 flex-shrink-0 px-2">
+                    <img :src="image" class="w-full h-64 object-cover rounded-lg shadow-lg">
+                </div>
+            </template>
+        </div>
+
+        <!-- Prev Button -->
+        <button @click="prev()" class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">
+            &#9665;
+        </button>
+
+        <!-- Next Button -->
+        <button @click="next()" class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-full">
+            &#9655;
+        </button>
+    </div>
+
+    <script>
+        function carousel() {
+            return {
+                images: [
+                    '/leap/isc1.png',
+                    '/leap/isc1.png',
+                    '/leap/isc1.png',
+                    'https://source.unsplash.com/600x400/?beach,sunset',
+                    'https://source.unsplash.com/600x400/?desert,sand'
+                ],
+                currentIndex: 0,
+                next() {
+                    if (this.currentIndex < this.images.length - 2) {
+                        this.currentIndex++;
+                    } else {
+                        this.currentIndex = 0;
+                    }
+                },
+                prev() {
+                    if (this.currentIndex > 0) {
+                        this.currentIndex--;
+                    } else {
+                        this.currentIndex = this.images.length - 2;
+                    }
+                },
+                autoScroll() {
+                    setInterval(() => this.next(), 3000);
+                }
+            };
+        }
+    </script>
+</body>
+</html>
