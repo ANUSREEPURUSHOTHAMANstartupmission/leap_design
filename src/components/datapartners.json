@@ -1,6 +1,6 @@
 [
   {
-    "title": "Al-Ameen College, Edathala",
+    "title": "Ameenian Incubation Startup Initiative",
 
     "image": "/leap/Al ameen.png",
     "image_main":"/leap/Al ameenmain.png",
@@ -30,8 +30,12 @@
     ],
 
     "images":[
-      "/leap/Al ameen1.png",
-      "/leap/Al ameen2.png"
+      "/leap/clg1.png",
+      "/leap/clg2.png",
+      "/leap/Al ameen2.png",
+      "/leap/clg3.png"
+
+
     ]
   },
   {
@@ -63,9 +67,12 @@
       "/leap/mizone1.png",
       "/leap/mizone2.png",
       "/leap/mizone3.png",
-      "/leap/mizone4.png",
+      "/leap/mizone11.png",
       "/leap/mizone5.png",
-      "/leap/mizone6.png"
+      "/leap/mizone6.png",
+      "/leap/mizone12.png",
+      "/leap/mizone13.png"
+
     ]
 
   },
