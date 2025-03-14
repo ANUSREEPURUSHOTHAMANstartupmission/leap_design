@@ -1,13 +1,18 @@
 [
   {
     "title": "Al-Ameen College, Edathala",
-    "image": "/leap/k1.png",
+
+    "image": "/leap/Al ameen.png",
+    "image_main":"/leap/Al ameenmain.png",
+
+
     "id": "p1",
-    "address": "address",
+    "address": "Al-Ameen College, Edathala, Aluva",
     "poc": "Dr Kala N",
     "email": "kalariteesha@gmail.com",
     "number": "7012921484",
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+   
     "facilities": [
       "Co-Working Space, Rs 2000 Per Seat, WiFi Facility Available, 24x7 Access to AI Space, Registered as a Section 8 Company",
       "IoT Lab",
@@ -22,17 +27,27 @@
       "Specialized Services for Recording Voiceovers for Commercials, Audiobooks, and Other Projects",
       "Tour Assistance and Guidance",
       "Offering Comprehensive Support Focused on Content Writing"
+    ],
+
+    "images":[
+      "/leap/Al ameen1.png",
+      "/leap/Al ameen2.png"
     ]
   },
   {
     "title": "MI Zone - Kannur",
-    "image": "/leap/k1.png",
+
+    "image": "/leap/mizone.png",
+    "image_main": "/leap/mizonemain.png",
+
+    
     "id": "p2",
-    "address": "address",
+    "address": "Mangattuparamba,Near Kannur University Campus",
     "poc": "Subhash",
     "email": "admin@mizone.in",
     "number": "9846113263",
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    
     "facilities": [
       "International standard workspace",
       "Mentoring by domain and Industry experts",
@@ -43,17 +58,30 @@
       "Govt & Public Agencies Liaising",
       "Value added services",
       "Market connect"
+    ],
+    "images":[
+      "/leap/mizone1.png",
+      "/leap/mizone2.png",
+      "/leap/mizone3.png",
+      "/leap/mizone4.png",
+      "/leap/mizone5.png",
+      "/leap/mizone6.png"
     ]
+
   },
   {
     "title": "Dr. Moopen's iNEST, Wayandu",
-    "image": "/leap/k1.png",
+
+    "image": "/leap/inest.png",
+    "image_main":"/leap/inestmain.png",
+
     "id": "p3",
-    "address": "address",
+    "address": "Dr. Moopen's iNEST, Wayandu",
     "poc": "Anjana Joseph",
     "email": "anjana.joseph@drmoopensmc.ac.in",
     "number": "8156898618",
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    
     "facilities": [
      "Fully furnished office space featuring high-end computing facilities",
      "High-speed internet",
@@ -63,17 +91,27 @@
      "Specialized instruments for biomaterials research",
      "3D Bioprinting", 
      "Molecular Biology and Tissue Engineering."
+    ],
+    "images":[
+      "/leap/inest1.png",
+      "/leap/inest2.png",
+      "/leap/inest3.png"
+      
     ]
   },
   {
     "title": "ZilCubator, Manjeri",
+
     "image": "/leap/k1.png",
+    "image_main":"",
+
     "id": "p4",
-    "address": "address",
+    "address": "Zil Money HQ, Kozhikkattu Kunnu, Manjeri",
     "poc": "Shibil C",
     "email": "shibil@zilmoney.com",
     "number": "7994949944",
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+   
     "facilities": [
      "US Market Expansion",
      "Fund of Funds",
@@ -82,6 +120,10 @@
      "Mentorship","Dining Area","24/7 Surveillance","Air conditioned workspace ",
      "High Speed network",
      "Gym Coffee and Snacks Suite room Applicable"
+    ],
+
+    "images":[
+
     ]
   },
   {
@@ -99,13 +141,17 @@
   },
   {
     "title": "Startups Valley AJCE TBI",
-    "image": "/leap/k1.png",
+
+    "image": "/leap/ajce11.png",
+    "image_main":"/leap/ajcemain.png",
+    
     "id": "p6",
-    "address": "address",
+    "address": "Amal Jyothi College of Engineering Kanjirappally",
     "poc": "Dr. Sherin Sam Jose",
     "email": "sherinsamjose@amaljyothi.ac.in",
     "number": "9496805712",
     "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    
     "facilities": [
      "Office Space ",
      "AC rooms with furniture",
@@ -114,6 +160,17 @@
     "Conference Room",
     "Meeting Room",
     "Library","Laser Printer","Photocopier","Scanner","Teleconferencing facilities","Fab Lab Facility","Test and analysis Labs","Cafeteria"
+    ],
+    "images":[
+      "/leap/ajce1.png",
+      "/leap/ajce2.png",
+      "/leap/ajce3.png",
+      "/leap/ajce4.png",
+      "/leap/ajce5.png",
+      "/leap/ajce6.png",
+      "/leap/ajce7.png",
+      "/leap/ajce8.png"
+
     ]
   }
 ]

@@ -115,8 +115,6 @@
          "/leap/kochi5.png",
         "/leap/kochi6.png",
         "/leap/kochi7.png"
-
-
       ]
       
     },
@@ -145,53 +143,96 @@
       "s2_subsidy":"40",
       "s2_rate":"Rate Per Seats",
       "s2_base":"6000",
-      "s2_after":"3600"
+      "s2_after":"3600",
+
+      "images":[
+        "/leap/tvm1.png",
+        "/leap/tvm2.png",
+        "/leap/tvm5.png",
+        "/leap/tmv3.png",
+        "/leap/tvm4.png",
+        "/leap/tvm5.png"
+      ]
     },
    
     {
       "title": "Kerala Startup Mission- Kasargod",
+
       "image": "/leap/k1.png",
+      "image_main":"/leap/kochi 1.png",
+
       "id": "p5",
+
       "address": "ASAP Community Skill park, Kasaragod",
       "poc":"Kavya K S",
       "email":"kavya@startupmission.in",
       "number":"+919072702096",
       "desc": "",
+      
       "s1_type":"Coworking Space",
+      "s1_icon":"/leap/co_work.png",
       "s1_subsidy":"40",
       "s1_rate":"Rate Per Seats",
       "s1_base":"3000",
-      "s1_after":"1800"
+      "s1_after":"1800",
+
+      "images":[
+
+        "/leap/tvm1.png"
+
+      ]
     },
     {
       "title": "Kerala Startup Mission- Palakkad",
+
       "image": "/leap/k1.png",
+      "image_main":"/leap/kochi 1.png",
+
       "id": "p6",
       "address": "GPTC Palakkad ",
       "poc":"Rahul Shah",
       "email":"s.rahul@startupmission.in",
       "number":"7403180193",
       "desc": "",
+     
       "s1_type":"Coworking Space",
+      "s1_icon":"/leap/co_work.png",
       "s1_subsidy":"40",
       "s1_rate":"Rate Per Seats",
       "s1_base":"3000",
-      "s1_after":"1800"
+      "s1_after":"1800",
+
+      "images":[
+
+        "/leap/tvm1.png"
+
+      ]
     },
     {
       "title": "Kerala Startup Mission- Kollam",
+
       "image": "/leap/k1.png",
+      "image_main":"/leap/kochi 1.png",
+
       "id": "p7",
       "address": "ASAP Community Skill park, Kulakada, Kollam",
       "poc":"Krishnakumar M",
       "email":"krishnakumar@startupmission.in",
       "number":"9961822685",
       "desc": "",
+      
       "s1_type":"Coworking Space",
+      "s1_icon":"/leap/co_work.png",
       "s1_subsidy":"40",
       "s1_rate":"Rate Per Seats",
       "s1_base":"3000",
-      "s1_after":"1800"
+      "s1_after":"1800",
+
+      "images":[
+
+        "/leap/tvm1.png"
+
+      ]
     }
   ]
   

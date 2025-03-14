@@ -79,6 +79,10 @@
                                 </div> -->
                             </div>
 
+                            <div class="md:w-2/3 w-full mb-20  overflow-hidden">
+                                <img src={item.image_main} alt="image" class="   rounded-md ">
+                            </div>
+
                             <div class="expect-wrap mb-70">
                                 <h4 class="title  pb-6 text-xl font-semibold">The facilities and offers available</h4>
                                 <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
@@ -105,28 +109,37 @@
                                 </div>
                             </div>
                          
-                            <div class="row mb-20 image-gallery-single">
-                                {#if item.image}
+                            {#if item.images}
+                            <section class="container mb-24">
+                                <div class="">
+                                    <div class="description-wrap mb-4">
+                                        <span class="description">Facility Available</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 relative populer-activities-slide">
+                                            <div class="swiper serviceSwiper populer-activities overflow-hidden">
+                                                <div class="swiper-wrapper">
+                                                    {#each item.images as image}
+                                                        <div class="swiper-slide h-auto flex flex-col">
+                                                            <div class="tf-widget-populer flex flex-col h-full">
+                                                                <div class="image relative">
+                                                                    <img src="{image}" alt="Image" class=" h-64">
 
-                                <div class="col-12 col-sm-6">
-                                    <img src={item.image} alt="image" class="h-72 object-fill rounded-md">
+                                                                </div>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    {/each}
+                                                </div>
+                                            </div>
+                                            <!-- <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div> -->
+                                        </div>
+                                    </div>
                                 </div>
-                                {/if}
-                                
-                                {#if item.image1}
-                                    <div class="col-6 col-sm-3">
-                                        <img src={item.image1} alt="image" class="h-72 object-fill rounded-md">
-                                    </div>
-                                {/if}
-                                
-                                {#if item.image2}
-                                    <div class="col-6 col-sm-3">
-                                        <img src={item.image2} alt="image" class="h-72 object-fill rounded-md">
-                                    </div>
-                                {/if}
-                                
-                                
-                            </div>
+            
+                            </section>
+                            {/if}
 
                             <div class=" flex items-end justify-end w-full">
                                 <a href="javascript:history.back()" class="text-blue-800 flex gap-2 text-xl font-semibold">
