@@ -158,8 +158,8 @@
     {
       "title": "Kerala Startup Mission- Kasargod",
 
-      "image": "/leap/k1.png",
-      "image_main":"/leap/kochi 1.png",
+      "image": "/leap/ksgd.png",
+      "image_main":"/leap/ksgdmain.png",
 
       "id": "p5",
 
@@ -178,8 +178,9 @@
 
       "images":[
 
-        "/leap/tvm1.png"
-
+        "/leap/ksgd1.png",
+        "/leap/ksgd2.png",
+        "/leap/ksgd3.png"
       ]
     },
     {

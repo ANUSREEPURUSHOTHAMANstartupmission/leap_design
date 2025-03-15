@@ -83,29 +83,39 @@
                                 <img src={item.image_main} alt="image" class="   rounded-md ">
                             </div>
 
-                            <div class="expect-wrap mb-70">
+                            <div class="expect-wrap my-24">
                                 <h4 class="title  pb-6 text-xl font-semibold">The facilities and offers available</h4>
-                                <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
-                                    <div class="">
-                                        <ul class="listing-clude">
-                                          {#each item.facilities.slice(0, 6) as facility}
-                                            <li class="flex-three">
-                                              <i class="icon-Vector-7"></i>
-                                              <p class="  capitalize">{facility}</p>
-                                            </li>
-                                          {/each}
-                                        </ul>
-                                      </div>
-                                      <div class="">
-                                        <ul class="listing-clude">
-                                          {#each item.facilities.slice(6) as facility}
-                                            <li class="flex-three">
-                                              <i class="icon-Vector-7"></i>
-                                              <p>{facility}</p>
-                                            </li>
-                                          {/each}
-                                        </ul>
-                                      </div>
+                                <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+                                        <div class="">
+                                            <ul class="listing-clude">
+                                            {#each item.facilities.slice(0, 6) as facility}
+                                                <li class="flex-three">
+                                                <i class="icon-Vector-7"></i>
+                                                <p class="  capitalize">{facility}</p>
+                                                </li>
+                                            {/each}
+                                            </ul>
+                                        </div>
+                                        <div class="">
+                                            <ul class="listing-clude">
+                                            {#each item.facilities.slice(6,12) as facility}
+                                                <li class="flex-three">
+                                                <i class="icon-Vector-7"></i>
+                                                <p>{facility}</p>
+                                                </li>
+                                            {/each}
+                                            </ul>
+                                        </div>
+                                        <div class="">
+                                            <ul class="listing-clude">
+                                            {#each item.facilities.slice(12) as facility}
+                                                <li class="flex-three">
+                                                <i class="icon-Vector-7"></i>
+                                                <p>{facility}</p>
+                                                </li>
+                                            {/each}
+                                            </ul>
+                                        </div>
                                 </div>
                             </div>
                          
