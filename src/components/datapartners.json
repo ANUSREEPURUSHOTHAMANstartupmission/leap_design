@@ -25,7 +25,6 @@
       "Live Sound Reinforcement",
       "Sync Sound",
       "Specialized Services for Recording Voiceovers for Commercials, Audiobooks, and Other Projects",
-      "Tour Assistance and Guidance",
       "Offering Comprehensive Support Focused on Content Writing"
     ],
 
@@ -108,7 +107,12 @@
      "Laboratory facilities equipped for wet lab work",
      "Specialized instruments for biomaterials research",
      "3D Bioprinting", 
-     "Molecular Biology and Tissue Engineering."
+     "Molecular Biology and Tissue Engineering.",
+     "Cabin space and coworking space",
+     "Workstations",
+     "High Speed Network",
+     "Mentorship",
+     "Cafeteria & Restaurants","24/7 Surveillance","Access to healthcare Ecosystem","Discussion rooms, Meeting Rooms & Training Halls based on availability"
     ],
     "images":[
       "/leap/inest1.png",
@@ -120,8 +124,8 @@
   {
     "title": "ZilCubator, Manjeri",
 
-    "image": "/leap/k1.png",
-    "image_main":"",
+    "image": "/img/DSC05574 1 1.png",
+    "image_main":"/img/DSC05574 1 1 (1).png",
 
     "id": "p4",
     "address": "Zil Money HQ, Kozhikkattu Kunnu, Manjeri",
@@ -148,7 +152,7 @@
     "title": "Adi Shankara Institute of Engineering and Technology",
     "image": "/leap/k1.png",
     "id": "p5",
-    "address": "address",
+    "address": "Vidya Bharathi Nagar, Mattoor, Kalady, Kerala 683574",
     "poc": "Dr Eldose KK",
     "email": "eldhosekk.me@adishankara.ac.in",
     "number": "9847664564",
@@ -188,6 +192,69 @@
       "/leap/ajce6.png",
       "/leap/ajce7.png",
       "/leap/ajce8.png"
+
+    ]
+  },
+  {
+    "title": "St. Thomas College of Engineering & Technology",
+
+    "image": "/img/st1.png",
+    "image_main":"/img/st2.png",
+    
+    "id": "p7",
+    "address": "Kozhuvalloor, Chengannur",
+    "poc": "Dr. Vipin Gopan",
+    "email": "vipingopan@stthomascollege.ac.in",
+    "number": "8891710248",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    
+    "facilities": [
+     "Co-working spaces",
+     "Private cabins",
+    "Conference rooms",
+    "Meeting rooms",
+    "Event space",
+    "High-speed internet",
+    "Printing & scanning facilities",
+    " Cafeteria or food services",
+    "Parking facilities",
+    "24/7 Access",
+    "Security & surveillance"
+    ],
+    "images":[
+     "/img/st6.png",
+     "/img/st4.png",
+     "/img/st5.png",
+     "/img/st3.png"
+    ]
+  },
+  {
+    "title": "Berchmans Centre for Innovation & Entrepreneurship",
+
+    "image": "/img/b1.png",
+    "image_main":"/img/b2.png",
+    
+    "id": "p8",
+    "address": "Changanassery, Kerala",
+    "poc": "Dr. Philip Litto Thomas",
+    "email": "philip@sbcollege.ac.in",
+    "number": "9495081157",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta incidunt dignissimos ullam libero optio...",
+    
+    "facilities": [
+     "Modern Co-working Environment",
+     "Meeting Room",
+     "Fabrication Facility",
+     "100-seater AC seminar room",
+     "Academic Collaboration",
+     "Library Access"
+    ],
+    "images":[
+     "/img/bl5.png",
+     "/img/bl4.png",
+     "/img/bl3.png",
+     "/img/bl2.png",
+     "/img/bl1.png"
 
     ]
   }

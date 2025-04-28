@@ -1,7 +1,62 @@
 <script>
+    import { onMount } from 'svelte';
+    import Swiper from 'swiper';
+    import { Autoplay, Pagination } from 'swiper/modules'; // ✅ Correct source for named modules
+    import 'swiper/css';
+    import 'swiper/css/pagination';
+  
     export let item;
-    
-</script>
+  
+    let swiperInstance;
+  
+    Swiper.use([Autoplay, Pagination]); // ✅ Register modules
+  
+    function highlightActiveSlides(swiper) {
+      swiper.slides.forEach(slide => slide.classList.remove("is-active"));
+      const start = swiper.activeIndex;
+      swiper.slides[start]?.classList.add("is-active");
+      swiper.slides[start + 1]?.classList.add("is-active");
+    }
+  
+    onMount(() => {
+      swiperInstance = new Swiper(".serviceSwiper1", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        speed: 1000,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+        },
+        on: {
+          init: function () {
+            highlightActiveSlides(this);
+          },
+          slideChange: function () {
+            highlightActiveSlides(this);
+          }
+        }
+      });
+    });
+  </script>
+  
+  
+
+
   
   <div class="p-6 ">
    
@@ -79,15 +134,39 @@
                                     </div>
                                 </div> -->
                             </div>
-                            <div class="md:w-2/3 w-full mb-20  overflow-hidden">
-                                <img src={item.image_main} alt="image" class="   rounded-md ">
+                            <div class="flex md:flex-row flex-col">
+                                <div class="md:w-1/3 w-full h-64 object-cover">
+                                    <img src={item.image_main} alt="image" class=" h-full   rounded-md ">
+                                </div>
+                                <div class="md:w-2/3 w-full overflow-hidden">
+                                    {#if item.images}
+                                    <section class="container mb-24">
+                                      <div class="swiper serviceSwiper1 overflow-hidden">
+                                        <div class="swiper-wrapper">
+                                          {#each item.images as image}
+                                            <div class="swiper-slide h-auto flex flex-col">
+                                              <div class="tf-widget-populer flex flex-col h-full">
+                                                <div class="image relative">
+                                                  <img src="{image}" alt="Image" class="h-64" />
+                                                </div>
+                                              </div>
+                                            </div>
+                                          {/each}
+                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                      </div>
+                                    </section>
+                                  {/if}
+                                  
+        
+                                </div>
                             </div>
                             <section class="discount-h5 pb-20">
                                 <div class="tf-container">
                                     <div class="description-wrap mb-4">
                                         <span class="description">Types of Space Available</span>
                                     </div>
-                                    <div class="grid md:grid-cols-4 grid-cols-1 gap-4">
+                                    <div class="grid md:grid-cols-4 grid-cols-1 gap-4 hidden">
                                        
                                         {#if item.s1_type}
                                         <div class="">
@@ -170,6 +249,115 @@
                                         {/if}
                                    
                                     </div>
+
+
+                                    <div class="grid md:grid-cols-3 grid-cols-1 gap-4 h-auto">
+                                       
+                                        {#if item.s1_type}
+                                        <div class="flex bg-white rounded-2xl h-auto  shadow-lg p-8 ">
+                                            <div class="h-full w-full">
+                                                <div>
+                                                    <img src="{item.s1_icon}" class=" w-10 group-hover:scale-110 duration-700">
+                                                </div>
+                                                <div>
+                                                    <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s1_type}</p>
+                                                </div>
+                                                <div class=" flex items-end justify-end w-full">
+                                                    <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s1_subsidy}% Subsidy</p>
+                                                </div>
+                                                <div class=" flex justify-between my-6 ">
+                                                    <p class="font-bold">Base Rate</p>
+                                                    <p class=" font-bold">{item.s1_base}/-</p>
+                                                </div>
+                                                <div class=" flex justify-between">
+                                                    <p class="font-bold">After Subsidy</p>
+                                                    <p class="  font-bold">{item.s1_after}/-</p>
+                                                </div>
+                                                <span class="text-main sale-up pt-6 pb-4 text-end">{item.s1_rate}</span>
+
+                                            </div>
+                                        </div>
+                                        {/if}
+
+                                        {#if item.s2_type}
+                                            <div class="flex bg-white rounded-2xl h-auto  shadow-lg p-8 ">
+                                                <div class="h-full w-full">
+                                                    <div>
+                                                        <img src="{item.s2_icon}" class=" w-10 group-hover:scale-110 duration-700">
+                                                    </div>
+                                                    <div>
+                                                        <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s2_type}</p>
+                                                    </div>
+                                                    <div class=" flex items-end justify-end w-full">
+                                                        <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s2_subsidy}% Subsidy</p>
+                                                    </div>
+                                                    <div class=" flex justify-between my-6 ">
+                                                        <p class="font-bold">Base Rate</p>
+                                                        <p class=" font-bold">{item.s2_base}/-</p>
+                                                    </div>
+                                                    <div class=" flex justify-between">
+                                                        <p class="font-bold">After Subsidy</p>
+                                                        <p class="  font-bold">{item.s2_after}/-</p>
+                                                    </div>
+                                                    <span class="text-main sale-up pt-6 pb-4 text-end">{item.s2_rate}</span>
+
+                                                </div>
+                                            </div>
+                                        {/if}
+
+                                        {#if item.s3_type}
+                                            <div class="flex bg-white rounded-2xl h-auto  shadow-lg p-8 ">
+                                                <div class="h-full w-full">
+                                                    <div>
+                                                        <img src="{item.s3_icon}" class=" w-10 group-hover:scale-110 duration-700">
+                                                    </div>
+                                                    <div>
+                                                        <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s3_type}</p>
+                                                    </div>
+                                                    <div class=" flex items-end justify-end w-full">
+                                                        <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s3_subsidy}% Subsidy</p>
+                                                    </div>
+                                                    <div class=" flex justify-between my-6 ">
+                                                        <p class="font-bold">Base Rate</p>
+                                                        <p class=" font-bold">{item.s3_base}/-</p>
+                                                    </div>
+                                                    <div class=" flex justify-between">
+                                                        <p class="font-bold">After Subsidy</p>
+                                                        <p class="  font-bold">{item.s3_after}/-</p>
+                                                    </div>
+                                                    <span class="text-main sale-up pt-6 pb-4 text-end">{item.s3_rate}</span>
+
+                                                </div>
+                                            </div>
+                                        {/if}
+
+                                        {#if item.s4_type}
+                                            <div class="flex bg-white rounded-2xl h-auto  shadow-lg p-8 ">
+                                                <div class="h-full w-full">
+                                                    <div>
+                                                        <img src="{item.s4_icon}" class=" w-10 group-hover:scale-110 duration-700">
+                                                    </div>
+                                                    <div>
+                                                        <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s4_type}</p>
+                                                    </div>
+                                                    <div class=" flex items-end justify-end w-full">
+                                                        <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s4_subsidy}% Subsidy</p>
+                                                    </div>
+                                                    <div class=" flex justify-between my-6 ">
+                                                        <p class="font-bold">Base Rate</p>
+                                                        <p class=" font-bold">{item.s4_base}/-</p>
+                                                    </div>
+                                                    <div class=" flex justify-between">
+                                                        <p class="font-bold">After Subsidy</p>
+                                                        <p class="  font-bold">{item.s4_after}/-</p>
+                                                    </div>
+                                                    <span class="text-main sale-up pt-6 pb-4 text-end">{item.s4_rate}</span>
+
+                                                </div>
+                                            </div>
+                                        {/if}
+                                   
+                                    </div>
                                 </div>
                         
                             </section>
@@ -179,11 +367,11 @@
 
 
                             {#if item.images}
-                            <section class="container mb-24">
+                            <section class="container mb-24 hidden">
                                 <div class="">
-                                    <div class="description-wrap mb-4">
+                                    <!-- <div class="description-wrap mb-4">
                                         <span class="description">Facility Available</span>
-                                    </div>
+                                    </div> -->
                                     <div class="row">
                                         <div class="col-lg-12 relative populer-activities-slide">
                                             <div class="swiper serviceSwiper populer-activities overflow-hidden">
@@ -240,7 +428,17 @@
   
   
 
+<style>
+    .serviceSwiper1 .swiper-slide {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.serviceSwiper1 .swiper-slide.is-active {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
 
+</style>
 
 
 

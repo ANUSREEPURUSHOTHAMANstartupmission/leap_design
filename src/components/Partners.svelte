@@ -1,5 +1,71 @@
 <script>
+    import { onMount } from 'svelte';
+    import Swiper from 'swiper';
+    import { Autoplay, Pagination } from 'swiper/modules'; // ✅ Correct source for named modules
+    import 'swiper/css';
+    import 'swiper/css/pagination';
+  
     export let item;
+  
+    let swiperInstance;
+  
+    Swiper.use([Autoplay, Pagination]); // ✅ Register modules
+  
+    function highlightActiveSlides(swiper) {
+      swiper.slides.forEach(slide => slide.classList.remove("is-active"));
+      const start = swiper.activeIndex;
+      swiper.slides[start]?.classList.add("is-active");
+      swiper.slides[start + 1]?.classList.add("is-active");
+    }
+  
+    onMount(() => {
+      swiperInstance = new Swiper(".serviceSwiper1", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        speed: 1000,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+        },
+        on: {
+          init: function () {
+            highlightActiveSlides(this);
+          },
+          slideChange: function () {
+            highlightActiveSlides(this);
+          }
+        }
+      });
+    });
+
+  
+    $: gridClass = item.facilities.length <= 12 ? 'md:grid-cols-2' : 'md:grid-cols-3';
+
+// Split into chunks of 3 facilities each
+function chunkFacilities(facilities, size) {
+  const chunks = [];
+  for (let i = 0; i < facilities.length; i += size) {
+    chunks.push(facilities.slice(i, i + size));
+  }
+  return chunks;
+}
+
+$: facilityChunks = chunkFacilities(item.facilities, 3);
   </script>
   
   <div class="p-6 ">
@@ -79,48 +145,93 @@
                                 </div> -->
                             </div>
 
-                            <div class="md:w-2/3 w-full mb-20  overflow-hidden">
-                                <img src={item.image_main} alt="image" class="   rounded-md ">
-                            </div>
-
-                            <div class="expect-wrap my-24">
-                                <h4 class="title  pb-6 text-xl font-semibold">The facilities and offers available</h4>
-                                <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
-                                        <div class="">
-                                            <ul class="listing-clude">
-                                            {#each item.facilities.slice(0, 6) as facility}
-                                                <li class="flex-three">
-                                                <i class="icon-Vector-7"></i>
-                                                <p class="  capitalize">{facility}</p>
-                                                </li>
-                                            {/each}
-                                            </ul>
+                            <div class="flex md:flex-row flex-col">
+                                <div class="md:w-1/3 w-full h-64 object-cover mb-24">
+                                    <img src={item.image_main} alt="image" class=" h-full   rounded-md ">
+                                </div>
+                                <div class="md:w-2/3 w-full overflow-hidden">
+                                    {#if item.images}
+                                    <section class="container mb-24">
+                                      <div class="swiper serviceSwiper1 overflow-hidden">
+                                        <div class="swiper-wrapper">
+                                          {#each item.images as image}
+                                            <div class="swiper-slide h-auto flex flex-col">
+                                              <div class="tf-widget-populer flex flex-col h-full">
+                                                <div class="image relative">
+                                                  <img src="{image}" alt="Image" class="h-64" />
+                                                </div>
+                                              </div>
+                                            </div>
+                                          {/each}
                                         </div>
-                                        <div class="">
-                                            <ul class="listing-clude">
-                                            {#each item.facilities.slice(6,12) as facility}
-                                                <li class="flex-three">
-                                                <i class="icon-Vector-7"></i>
-                                                <p>{facility}</p>
-                                                </li>
-                                            {/each}
-                                            </ul>
-                                        </div>
-                                        <div class="">
-                                            <ul class="listing-clude">
-                                            {#each item.facilities.slice(12) as facility}
-                                                <li class="flex-three">
-                                                <i class="icon-Vector-7"></i>
-                                                <p>{facility}</p>
-                                                </li>
-                                            {/each}
-                                            </ul>
-                                        </div>
+                                        <div class="swiper-pagination"></div>
+                                      </div>
+                                    </section>
+                                  {/if}
+                                  
+        
                                 </div>
                             </div>
-                         
+
+                            <div class="expect-wrap mb-24">
+                                <h4 class="title pb-6 text-xl font-semibold">The facilities and offers available</h4>
+
+                                <div class="grid grid-cols-1 gap-4 {gridClass}">
+                                  {#each facilityChunks as chunk}
+                                    <div>
+                                      <ul class="listing-clude">
+                                        {#each chunk as facility}
+                                          <li class="flex-three">
+                                            <i class="icon-Vector-7"></i>
+                                            <p class="capitalize">{facility}</p>
+                                          </li>
+                                        {/each}
+                                      </ul>
+                                    </div>
+                                  {/each}
+                                </div>
+                                
+                                <!-- <div class="grid grid-cols-1 gap-4 {item.facilities.length <= 12 ? 'md:grid-cols-2' : 'md:grid-cols-3'}">
+                                  <div>
+                                    <ul class="listing-clude">
+                                      {#each item.facilities.slice(0, 6) as facility}
+                                        <li class="flex-three">
+                                          <i class="icon-Vector-7"></i>
+                                          <p class="capitalize">{facility}</p>
+                                        </li>
+                                      {/each}
+                                    </ul>
+                                  </div>
+                                  
+                                  <div>
+                                    <ul class="listing-clude">
+                                      {#each item.facilities.slice(6, 12) as facility}
+                                        <li class="flex-three">
+                                          <i class="icon-Vector-7"></i>
+                                          <p>{facility}</p>
+                                        </li>
+                                      {/each}
+                                    </ul>
+                                  </div>
+                                  
+                                  {#if item.facilities.length > 12}
+                                    <div>
+                                      <ul class="listing-clude">
+                                        {#each item.facilities.slice(12) as facility}
+                                          <li class="flex-three">
+                                            <i class="icon-Vector-7"></i>
+                                            <p>{facility}</p>
+                                          </li>
+                                        {/each}
+                                      </ul>
+                                    </div>
+                                  {/if}
+                                  
+                                </div> -->
+                              </div>
+                              
                             {#if item.images}
-                            <section class="container mb-24">
+                            <section class="container mb-24 hidden">
                                 <div class="">
                                     <div class="description-wrap mb-4">
                                         <span class="description">Facility Available</span>
