@@ -186,8 +186,8 @@
     {
       "title": "Kerala Startup Mission- Palakkad",
 
-      "image": "/leap/k1.png",
-      "image_main":"/leap/kochi 1.png",
+      "image": "/img/p1.png",
+      "image_main":"/img/p2.png",
 
       "id": "p6",
       "address": "GPTC Palakkad ",
@@ -205,8 +205,8 @@
 
       "images":[
 
-        "/leap/tvm1.png",
-        "/leap/tvm1.png"
+        "/img/p3.png",
+        "/img/p4.png"
 
 
       ]
@@ -214,8 +214,8 @@
     {
       "title": "Kerala Startup Mission- Kollam",
 
-      "image": "/leap/k1.png",
-      "image_main":"/leap/kochi 1.png",
+      "image": "/img/k1.png",
+      "image_main":"/img/kollam.png",
 
       "id": "p7",
       "address": "ASAP Community Skill park, Kulakada, Kollam",
@@ -232,8 +232,6 @@
       "s1_after":"1800",
 
       "images":[
-
-        "/leap/tvm1.png"
 
       ]
     }

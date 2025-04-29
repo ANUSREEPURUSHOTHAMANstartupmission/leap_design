@@ -134,13 +134,13 @@
                                     </div>
                                 </div> -->
                             </div>
-                            <div class="flex md:flex-row flex-col">
+                            <div class="flex md:flex-row flex-col mb-24">
                                 <div class="md:w-1/3 w-full h-64 object-cover">
                                     <img src={item.image_main} alt="image" class=" h-full   rounded-md ">
                                 </div>
                                 <div class="md:w-2/3 w-full overflow-hidden">
                                     {#if item.images}
-                                    <section class="container mb-24">
+                                    <section class="container">
                                       <div class="swiper serviceSwiper1 overflow-hidden">
                                         <div class="swiper-wrapper">
                                           {#each item.images as image}
