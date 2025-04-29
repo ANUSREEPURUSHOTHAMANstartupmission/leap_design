@@ -173,7 +173,7 @@
                                             <div class="banner-part-item booking-style-2 relative bg-part-gray overflow-hidden group  rounded-md shadow-md">
                                                 <img src="{item.s1_icon}" class=" w-10 group-hover:scale-110 duration-700">
                                                 <p class=" text-black hover:text-black pb-2 text-center text-lg font-semibold pt-2">{item.s1_type}</p>
-                                                <p class=" font-bold text-center text-2xl font-bold text-[#00AEEF]">{item.s1_subsidy}% Subsidy</p>
+                                                <p class=" font-bold text-center text-2xl font-bold text-[#00AEEF]">{item.s1_subsidy}% Subsidy <sup>*</sup></p>
                                                 <div class=" flex justify-between my-6 ">
                                                     <p class="font-bold">Base Rate</p>
                                                     <p class=" font-bold">{item.s1_base}/-</p>
@@ -263,7 +263,7 @@
                                                     <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s1_type}</p>
                                                 </div>
                                                 <div class=" flex items-end justify-end w-full">
-                                                    <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s1_subsidy}% Subsidy</p>
+                                                    <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s1_subsidy}%<sup>*</sup> Subsidy</p>
                                                 </div>
                                                 <div class=" flex justify-between my-6 ">
                                                     <p class="font-bold">Base Rate</p>
@@ -274,7 +274,6 @@
                                                     <p class="  font-bold">{item.s1_after}/-</p>
                                                 </div>
                                                 <span class="text-main sale-up pt-6 pb-4 text-end">{item.s1_rate}</span>
-
                                             </div>
                                         </div>
                                         {/if}
@@ -289,7 +288,7 @@
                                                         <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s2_type}</p>
                                                     </div>
                                                     <div class=" flex items-end justify-end w-full">
-                                                        <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s2_subsidy}% Subsidy</p>
+                                                        <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s2_subsidy}%<sup>*</sup> Subsidy</p>
                                                     </div>
                                                     <div class=" flex justify-between my-6 ">
                                                         <p class="font-bold">Base Rate</p>
@@ -315,7 +314,7 @@
                                                         <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s3_type}</p>
                                                     </div>
                                                     <div class=" flex items-end justify-end w-full">
-                                                        <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s3_subsidy}% Subsidy</p>
+                                                        <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s3_subsidy}%<sup>*</sup> Subsidy</p>
                                                     </div>
                                                     <div class=" flex justify-between my-6 ">
                                                         <p class="font-bold">Base Rate</p>
@@ -341,7 +340,7 @@
                                                         <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s4_type}</p>
                                                     </div>
                                                     <div class=" flex items-end justify-end w-full">
-                                                        <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s4_subsidy}% Subsidy</p>
+                                                        <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s4_subsidy}%<sup>*</sup> Subsidy</p>
                                                     </div>
                                                     <div class=" flex justify-between my-6 ">
                                                         <p class="font-bold">Base Rate</p>
@@ -356,8 +355,9 @@
                                                 </div>
                                             </div>
                                         {/if}
-                                   
                                     </div>
+                                    <div class="text-[13px] text-[#777] mt-10 text-end ">* Subsidy percentage varies and is subject to change</div>
+
                                 </div>
                         
                             </section>
