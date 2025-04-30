@@ -56,7 +56,7 @@
   
   <svelte:window bind:scrollY={y}/>
   
-    <div id="navbar"  class="fixed space-x-4 shadow-md md:space-x-0 min-h-fit w-screen sm:min-h-0  left-0
+    <div id="navbar"  class="fixed space-x-4  md:space-x-0 min-h-fit w-screen sm:min-h-0  left-0
    flex sm:items-center
     ease-in-out transition-all transform duration-300
     z-50  py-2
@@ -93,7 +93,7 @@
         </div>
       
         <div class="flex  items-center justify-center  bg-black my-auto spl_cursor md:hidden flex ">   
-             <div on:click="{()=> menu_open = !menu_open }" class="z-50 items-center justify-center my-auto spl_cursor md:pt-4 pt-1  bg-black absolute cursor-pointer top-3 md:right-8 right-4 w-10 h-10 md:text-xl text-xs ml-auto transition duration-150 hover:shadow py-1  -solid -transparent rounded bg-transparent block outline-none focus:outline-none" type="button">
+             <div on:click="{()=> menu_open = !menu_open }" class="z-50 items-center justify-center my-auto spl_cursor md:pt-4 pt-1  bg-black absolute cursor-pointer top-3 md:right-8 right-4 w-10 h-10 md:text-xl text-xs ml-auto transition duration-150  py-1  -solid -transparent rounded bg-transparent block outline-none focus:outline-none" type="button">
                 <div class="block absolute w-6 h-0.5 rounded-sm bg-black top-5  duration-500 { menu_open ? 'opacity-0':'' }" ></div>
                 <div class="block absolute w-6 h-0.5 rounded-sm bg-black top-6 duration-500 { menu_open ? 'transform rotate-45':'' }"></div>
                 <div class="block absolute w-6 h-0.5 rounded-sm bg-black top-7 duration-500 { menu_open ? 'transform -rotate-45':'' }"></div>
@@ -105,41 +105,41 @@
    </div>
   
   
-   <div id="navbar" class=" min-h-screen   h-20 p-8 sm:py-3 bg-black left-0 top-0
+   <div id="navbar" class=" min-h-screen   h-20 p-8 sm:py-3 bg-white left-0 top-0
    flex items-center
     ease-in-out transition-all transform duration-300
    -translate-x-full  fixed z-50
     {menu_open?'translate-x-0':''}
    ">
      <div class="flex bg-white top-4 absolute spl_cursor">   
-        <button on:click="{()=> menu_open = !menu_open }" class="z-50 spl_cursor bg-black cursor-pointer fixed right-5 w-10 h-10 text-xl ml-auto transition duration-150 hover:shadow leading-none px-2 py-1  -solid -transparent rounded bg-transparent block outline-none focus:outline-none" type="button">
-            <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-white top-3 duration-500 { menu_open ? 'opacity-0':'' }" ></span>
-            <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-white duration-500 { menu_open ? 'transform rotate-45':'' }"></span>
-            <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-white duration-500 { menu_open ? 'transform -rotate-45':'' }"></span>
-            <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-white bottom-2.5 duration-500 { menu_open ? 'opacity-0':'' }"></span>
+        <button on:click="{()=> menu_open = !menu_open }" class="z-50 spl_cursor bg-black cursor-pointer fixed right-5 w-10 h-10 text-xl ml-auto transition duration-150 leading-none px-2 py-1  -solid -transparent rounded bg-transparent block outline-none focus:outline-none" type="button">
+            <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-black top-3 duration-500 { menu_open ? 'opacity-0':'' }" ></span>
+            <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-black duration-500 { menu_open ? 'transform rotate-45':'' }"></span>
+            <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-black duration-500 { menu_open ? 'transform -rotate-45':'' }"></span>
+            <span class="block spl_cursor absolute w-6 h-1 rounded-sm bg-black bottom-2.5 duration-500 { menu_open ? 'opacity-0':'' }"></span>
         </button>
     </div>
   
   
     <div class="w-fit container mx-auto sm:items-center sm:justify-between">
         <div class="mb-8 gap-2  font-medium sm:bg-transparent p-5 sm:p-0 rounded-md flex items-center justify-center">
-            <img src="/img/logo11.svg" alt="logo" class="md:h-14 h-12">
+            <img src="/img/logo.svg" alt="logo" class="md:h-14 h-12">
             <img src="/leap/leap.svg" alt="logo" class="md:h-14 h-12">
   
         </div>
          <nav>
             <ul class=" md:text-sm gap-2 font-data">
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                        <a href="/"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">Home</a>
+                        <a href="/"  class="cursor-pointer text-black font-bold hover:text-black uppercase ">Home</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/leap-co-works"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">LEAP CO-WORKS</a>
+                      <a href="/leap-co-works"  class="cursor-pointer text-black font-bold hover:text-black uppercase ">LEAP CO-WORKS</a>
                     </li>
                     <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/leap-membership"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">LEAP MEMBERSHIP</a>
+                      <a href="/leap-membership"  class="cursor-pointer text-black font-bold hover:text-black uppercase ">LEAP MEMBERSHIP</a>
                     </li> 
                      <li on:click="{()=> menu_open = !menu_open }" class="px-5 py-2 transform hover:bg-gray-400 transition duration-500 hover:scale-100 md:hidden flex">
-                      <a href="/#leap_facility"  class="cursor-pointer text-white font-bold hover:text-black uppercase ">FACILITY BOOKING</a>
+                      <a href="/#leap_facility"  class="cursor-pointer text-black font-bold hover:text-black uppercase ">FACILITY BOOKING</a>
                     </li>
   
                     

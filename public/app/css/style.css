@@ -6582,7 +6582,7 @@
 .counter-item span {
   font-size: 18px;
   font-weight: 500;
-  line-height: 49px;
+  /* line-height: 49px; */
   color: #081E2A;
 }
 .counter-item .number-counter {
