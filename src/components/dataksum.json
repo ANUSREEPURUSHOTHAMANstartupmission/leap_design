@@ -31,6 +31,14 @@
       "images":[
         "/leap/c1.png",
         "/leap/c2.png"
+      ],
+      "facilities":[
+        "Plug-and-play coworking spaces",
+        "Multiple Conference rooms (8–10 seats)",
+        "Basic internet",
+        "Access to mentoring and funding support",
+        "Uninterrupted Power Supply",
+        "Cloud credits from tech partners"
       ]
       
     },
@@ -68,6 +76,14 @@
         "/leap/ul2.png",
         "/leap/ul3.png",
         "/leap/ul4.png"
+      ],
+      "facilities":[
+        "Plug-and-play coworking spaces",
+        "Multiple Conference rooms (8–10 seats)",
+        "Basic internet",
+        "Access to mentoring and funding support",
+        "Uninterrupted Power Supply",
+        "Cloud credits from tech partners"
       ]
       
     },
@@ -115,6 +131,14 @@
          "/leap/kochi5.png",
         "/leap/kochi6.png",
         "/leap/kochi7.png"
+      ],
+      "facilities":[
+        "Plug-and-play coworking spaces",
+        "Multiple conference rooms (8 - 36 seats)",
+        "Amphitheatre",
+        "Event Hall",
+        "Cafeteria, parking, and Basic internet",
+        "Super Fab Lab","Access to mentoring and funding support","Uninterrupted Power Supply","Cloud credits from tech partners"
       ]
       
     },
@@ -152,6 +176,16 @@
         "/leap/tmv3.png",
         "/leap/tvm4.png",
         "/leap/tvm5.png"
+      ],
+      "facilities":[
+        "Plug-and-play coworking spaces",
+        "Multiple Conference rooms (5–10 seats)",
+        "Mentoring hall",
+        "Basic internet",
+        "Access to Trivandrum Fab Lab",
+        "Access to mentoring and funding support",
+        "Uninterrupted Power Supply",
+        "Cloud credits from tech partners"
       ]
     },
    
@@ -181,6 +215,13 @@
         "/leap/ksgd1.png",
         "/leap/ksgd2.png",
         "/leap/ksgd3.png"
+      ],
+      "facilities":[
+        "Plug-and-play coworking spaces",
+        "Basic internet",
+        "Uninterrupted Power Supply",
+        "Surveillance cameras & access control systems",
+        "Cloud credits from tech partners"
       ]
     },
     {
@@ -207,8 +248,14 @@
 
         "/img/p3.png",
         "/img/p4.png"
-
-
+      ],
+      "facilities":[
+        "Plug-and-play coworking spaces",
+        "Access to Mini Fab Lab",
+        "Basic internet",
+        "Uninterrupted Power Supply",
+        "Surveillance cameras & access control systems",
+        "Cloud credits from tech partners"
       ]
     },
     {
@@ -233,6 +280,13 @@
 
       "images":[
 
+      ],
+      "facilities":[
+        "Plug-and-play coworking spaces",
+        "Basic internet",
+        "Uninterrupted Power Supply",
+        "Surveillance cameras & access control systems",
+        "Cloud credits from tech partners"
       ]
     }
   ]

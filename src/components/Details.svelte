@@ -52,6 +52,24 @@
         }
       });
     });
+
+    $: facilitiesSafe = item.facilities ?? [];
+
+// Dynamically set grid columns
+$: gridClass = facilitiesSafe.length <= 12 ? 'md:grid-cols-2' : 'md:grid-cols-3';
+
+// Chunking function
+function chunkFacilities(facilities, size) {
+  const chunks = [];
+  for (let i = 0; i < facilities.length; i += size) {
+    chunks.push(facilities.slice(i, i + size));
+  }
+  return chunks;
+}
+
+// Chunk only if valid
+$: facilityChunks = chunkFacilities(facilitiesSafe, 3);
+
   </script>
   
   
@@ -72,25 +90,25 @@
                                     <div class="inner-heading-wrap flex-two">
                                         <div class="inner-heading">
                                             <span class="feature">KSUM Owned</span>
-                                            <h2 class="title">{item.title}</h2>
-                                            <ul class="flex-three list-wrap-heading">
+                                            <h2 class=" md:text-4xl text-3xl pb-4 font-bold">{item.title}</h2>
+                                            <ul class="flex-three list-wrap-heading gap-3">
                                                 <li class="flex-three">
                                                     <i class="icon-18"></i>
-                                                    <span>{item.address}</span>
+                                                    <span class="md:text-base text-xs text-black">{item.address}</span>
                                                 </li>
                                                 <li class="flex-three text-[#00AEEF;] gap-3">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                                                       </svg>
                                                       
-                                                    <span class="text-black">{item.email}</span>
+                                                    <span class="md:text-base text-xs text-black">{item.email}</span>
                                                 </li>
                                                 <li class="flex-three text-[#00AEEF;] gap-3">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
                                                       </svg>
                                                       
-                                                    <span class="text-black">{item.number}</span>
+                                                    <span class="md:text-base text-xs text-black">{item.number}</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -134,20 +152,20 @@
                                     </div>
                                 </div> -->
                             </div>
-                            <div class="flex md:flex-row flex-col mb-24">
-                                <div class="md:w-1/3 w-full h-64 object-cover">
+                            <div class="flex md:flex-row flex-col md:mb-24 gap-4">
+                                <div class="md:w-1/3 w-full h-64 object-cover md:mb-0 mb-4">
                                     <img src={item.image_main} alt="image" class=" h-full   rounded-md ">
                                 </div>
                                 <div class="md:w-2/3 w-full overflow-hidden">
                                     {#if item.images}
-                                    <section class="container">
+                                    <section class="md:container">
                                       <div class="swiper serviceSwiper1 overflow-hidden">
                                         <div class="swiper-wrapper">
                                           {#each item.images as image}
                                             <div class="swiper-slide h-auto flex flex-col">
                                               <div class="tf-widget-populer flex flex-col h-full">
                                                 <div class="image relative">
-                                                  <img src="{image}" alt="Image" class="h-64" />
+                                                  <img src="{image}" alt="Image" class="h-64 w-full" />
                                                 </div>
                                               </div>
                                             </div>
@@ -157,12 +175,12 @@
                                       </div>
                                     </section>
                                   {/if}
-                                  
-        
                                 </div>
                             </div>
-                            <section class="discount-h5 pb-20">
-                                <div class="tf-container">
+
+                     
+                            <section class="discount-h5 pb-20 md:pt-0 pt-10">
+                                <div class="md:container">
                                     <div class="description-wrap mb-4">
                                         <span class="description">Types of Space Available</span>
                                     </div>
@@ -362,8 +380,27 @@
                         
                             </section>
                            
+                            {#if item.facilities}
+                            <div class="expect-wrap mb-24">
+                                <h4 class="title pb-6 text-xl font-semibold">The facilities and offers available</h4>
 
-
+                                <div class="grid grid-cols-1 gap-4 {gridClass}">
+                                  {#each facilityChunks as chunk}
+                                    <div>
+                                      <ul class="listing-clude">
+                                        {#each chunk as facility}
+                                          <li class="flex-three">
+                                            <i class="icon-Vector-7"></i>
+                                            <p class="capitalize">{facility}</p>
+                                          </li>
+                                        {/each}
+                                      </ul>
+                                    </div>
+                                  {/each}
+                                </div>
+                                
+                            </div>
+                            {/if}
 
 
                             {#if item.images}
