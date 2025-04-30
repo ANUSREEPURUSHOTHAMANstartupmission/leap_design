@@ -280,8 +280,12 @@ $: facilityChunks = chunkFacilities(facilitiesSafe, 3);
                                                 <div>
                                                     <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s1_type}</p>
                                                 </div>
-                                                <div class=" flex items-end justify-end w-full">
+                                                <div class=" flex items-end justify-end w-full hidden">
                                                     <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s1_subsidy}%<sup>*</sup> Subsidy</p>
+                                                </div>
+                                                <div class=" flex justify-between my-6 text-[#00AEEF]">
+                                                    <p class="font-bold">Subsidy</p>
+                                                    <p class=" font-bold">{item.s1_subsidy}%<sup>*</sup></p>
                                                 </div>
                                                 <div class=" flex justify-between my-6 ">
                                                     <p class="font-bold">Base Rate</p>
@@ -305,8 +309,12 @@ $: facilityChunks = chunkFacilities(facilitiesSafe, 3);
                                                     <div>
                                                         <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s2_type}</p>
                                                     </div>
-                                                    <div class=" flex items-end justify-end w-full">
+                                                    <div class=" flex items-end justify-end w-full hidden">
                                                         <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s2_subsidy}%<sup>*</sup> Subsidy</p>
+                                                    </div>
+                                                    <div class=" flex justify-between my-6 text-[#00AEEF]">
+                                                        <p class="font-bold">Subsidy</p>
+                                                        <p class=" font-bold">{item.s2_subsidy}%<sup>*</sup></p>
                                                     </div>
                                                     <div class=" flex justify-between my-6 ">
                                                         <p class="font-bold">Base Rate</p>
@@ -331,8 +339,12 @@ $: facilityChunks = chunkFacilities(facilitiesSafe, 3);
                                                     <div>
                                                         <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s3_type}</p>
                                                     </div>
-                                                    <div class=" flex items-end justify-end w-full">
+                                                    <div class=" flex items-end justify-end w-full hidden">
                                                         <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s3_subsidy}%<sup>*</sup> Subsidy</p>
+                                                    </div>
+                                                    <div class=" flex justify-between my-6 text-[#00AEEF]">
+                                                        <p class="font-bold">Subsidy</p>
+                                                        <p class=" font-bold">{item.s3_subsidy}%<sup>*</sup></p>
                                                     </div>
                                                     <div class=" flex justify-between my-6 ">
                                                         <p class="font-bold">Base Rate</p>
@@ -357,8 +369,12 @@ $: facilityChunks = chunkFacilities(facilitiesSafe, 3);
                                                     <div>
                                                         <p class=" text-black hover:text-black pb-2  md:text-xl text-lg font-semibold pt-2">{item.s4_type}</p>
                                                     </div>
-                                                    <div class=" flex items-end justify-end w-full">
+                                                    <div class=" flex items-end justify-end w-full hidden">
                                                         <p class=" font-bold text-center text-2xl text-[#00AEEF]">{item.s4_subsidy}%<sup>*</sup> Subsidy</p>
+                                                    </div>
+                                                    <div class=" flex justify-between my-6 text-[#00AEEF]">
+                                                        <p class="font-bold">Subsidy</p>
+                                                        <p class=" font-bold">{item.s4_subsidy}%<sup>*</sup></p>
                                                     </div>
                                                     <div class=" flex justify-between my-6 ">
                                                         <p class="font-bold">Base Rate</p>
