@@ -150,9 +150,10 @@
   },
   {
     "title": "Adi Shankara Institute of Engineering and Technology",
-    "image": "/leap/k1.png",
+    "image": "/img/a1.png",
+    "image_main":"/img/a2.png",
     "id": "p5",
-    "address": "Vidya Bharathi Nagar, Mattoor, Kalady, Kerala 683574",
+    "address": "Vidya Bharathi Nagar, Mattoor, Kalady",
     "poc": "Dr Eldose KK",
     "email": "eldhosekk.me@adishankara.ac.in",
     "number": "9847664564",
