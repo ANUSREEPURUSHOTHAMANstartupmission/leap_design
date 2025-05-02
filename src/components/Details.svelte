@@ -93,7 +93,7 @@ $: facilityChunks = chunkFacilities(facilitiesSafe, 3);
                                             <h2 class=" md:text-4xl text-3xl pb-4 font-bold">{item.title}</h2>
                                             <ul class="flex-three list-wrap-heading gap-3">
                                                 <li class="flex-three">
-                                                    <i class="icon-18"></i>
+                                                    <!-- <i class="icon-18"></i> -->
                                                     <span class="md:text-base text-[12px] text-black">{item.address}</span>
                                                 </li>
                                                 <li class="flex-three text-[#00AEEF;] gap-3">
